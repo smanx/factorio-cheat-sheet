@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1763288369521,
+  "timestamp": 1763288596181,
   "index": "/factorio-cheat-sheet/index.html",
   "assetGroups": [
     {
@@ -23,7 +23,7 @@
         "/factorio-cheat-sheet/polyfills.7cae7c4241e48001.js",
         "/factorio-cheat-sheet/runtime.2891601ecfd1be6d.js",
         "/factorio-cheat-sheet/safari-pinned-tab.svg",
-        "/factorio-cheat-sheet/styles.bd34ee4529c8e95a.css"
+        "/factorio-cheat-sheet/styles.32a52d5737c70649.css"
       ],
       "patterns": [
         "\\/\\/fonts\\.googleapis\\.com\\/.*",
@@ -78,7 +78,8 @@
         "/factorio-cheat-sheet/assets/images/train-interrupt-unload_1-1-1.png",
         "/factorio-cheat-sheet/assets/images/train-schedule_1-1-1.png",
         "/factorio-cheat-sheet/assets/images/train-stack-load.webp",
-        "/factorio-cheat-sheet/assets/images/weapons-range.1.1.57.webp"
+        "/factorio-cheat-sheet/assets/images/weapons-range.1.1.57.webp",
+        "/factorio-cheat-sheet/factorio-cheat-sheet-rocket-launch.c0982693575f3ee6.webp"
       ],
       "patterns": []
     }
@@ -126,17 +127,18 @@
     "/factorio-cheat-sheet/assets/images/train-stack-load.webp": "20b8822589efe5ede9a8801a697f1e9075eb0fd2",
     "/factorio-cheat-sheet/assets/images/weapons-range.1.1.57.webp": "de10f17b57299bf1b0112f34f24a0e0965b178d5",
     "/factorio-cheat-sheet/browserconfig.xml": "974aea18bda5a95802c06b80126ab1d96d91d708",
+    "/factorio-cheat-sheet/factorio-cheat-sheet-rocket-launch.c0982693575f3ee6.webp": "79486250450742673500ff1e9950160aad8ef907",
     "/factorio-cheat-sheet/favicon-16x16.png": "8b9e790ca31c34160633f21404c9a2e7e5b71f1b",
     "/factorio-cheat-sheet/favicon-32x32.png": "e4dc39c7eb4b45ef44c424f6f6e9d90e0741e864",
     "/factorio-cheat-sheet/favicon.ico": "f3d7aac46ac43e464ed9a7aa65c1194818aeda6a",
-    "/factorio-cheat-sheet/index.html": "3d289ce2f5e755a83aa15c575f7007e503858268",
+    "/factorio-cheat-sheet/index.html": "78eff9f490e727a084de9606c69b1c8d7b9968c8",
     "/factorio-cheat-sheet/main.fb30beaaf9271e62.js": "9f69178b8d0f0ace70ec15e7c531fc759dc35ab4",
     "/factorio-cheat-sheet/manifest.webmanifest": "a09f447c77d619c9d9762d7df0c5744a1a45886c",
     "/factorio-cheat-sheet/mstile-150x150.png": "24c3dc794f99c0f9cbc22a30d4ae270e9df78452",
     "/factorio-cheat-sheet/polyfills.7cae7c4241e48001.js": "94a37e36199eb11ad7c2d10b4f862cc98e994b01",
     "/factorio-cheat-sheet/runtime.2891601ecfd1be6d.js": "50ce68dfd4ba5b517c5a8b866c0f23bd5a594768",
     "/factorio-cheat-sheet/safari-pinned-tab.svg": "a4edf8924896c841739282ba649989d77e66cb31",
-    "/factorio-cheat-sheet/styles.bd34ee4529c8e95a.css": "427c204a82476f84003d623d4cbf847a85c0f10c"
+    "/factorio-cheat-sheet/styles.32a52d5737c70649.css": "19119d23be70c34dc4e5420ca6ae7d731e1f6f27"
   },
   "navigationUrls": [
     {
