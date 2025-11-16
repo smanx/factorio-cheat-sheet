@@ -10,7 +10,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const MODULE_AND_BEACONS_SHEET_NAV: NavData = newNavData(
-  'Modules and Beacons',
+  '插件和插件效果分享塔',
   FactorioIcons.Icons_Beacon
 );
 

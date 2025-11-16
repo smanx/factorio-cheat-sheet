@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const BALANCERS_SHEET_NAV: NavData = newNavData(
-  'Balancers',
+  '平衡器',
   FactorioIcons.Icons_FastSplitter
 );
 

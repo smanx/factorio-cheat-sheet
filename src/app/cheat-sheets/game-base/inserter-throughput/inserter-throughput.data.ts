@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const INSERTER_THROUGHPUT_SHEET_NAV: NavData = newNavData(
-  'Inserter Throughput',
+  '机械臂吞吐量',
   FactorioIcons.Icons_Inserter
 );
 

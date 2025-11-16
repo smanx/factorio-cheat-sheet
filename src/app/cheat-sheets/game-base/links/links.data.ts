@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const LINKS_SHEET_NAV: NavData = newNavData(
-  'Links',
+  '链接',
   FactorioIcons.Icons_CopperCable
 );
 

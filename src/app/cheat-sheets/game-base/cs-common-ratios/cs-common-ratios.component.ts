@@ -13,7 +13,7 @@ import { Ratio } from './ratio.model';
 import { ROCKET_RATIO_DATA } from './rocket-ratios.data';
 
 export const COMMON_RATIOS_SHEET_NAV: NavData = newNavData(
-  'Common Ratios',
+  '常用比例',
   FactorioIcons.Icons_RepairPack
 );
 

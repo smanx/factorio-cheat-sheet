@@ -2051,7 +2051,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Barreling_BarrelEmpty]: {
     id: FactorioIcons.Barreling_BarrelEmpty,
-    display: 'Barreling: Barrel Empty',
+    display: '空桶',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/barreling/barrel-empty.png',
   },
   [FactorioIcons.Barreling_BarrelEmptySideMask]: {
@@ -2661,7 +2661,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_CrudeOil]: {
     id: FactorioIcons.Fluid_CrudeOil,
-    display: 'Fluid: Crude Oil',
+    display: '原油',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/crude-oil.png',
   },
   [FactorioIcons.Fluid_Electrolyte]: {
@@ -2696,7 +2696,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_HeavyOil]: {
     id: FactorioIcons.Fluid_HeavyOil,
-    display: 'Fluid: Heavy Oil',
+    display: '重油',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/heavy-oil.png',
   },
   [FactorioIcons.Fluid_HeavyOilCracking]: {
@@ -2721,7 +2721,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_LightOil]: {
     id: FactorioIcons.Fluid_LightOil,
-    display: 'Fluid: Light Oil',
+    display: '轻油',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/light-oil.png',
   },
   [FactorioIcons.Fluid_LightOilCracking]: {
@@ -2736,7 +2736,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_Lubricant]: {
     id: FactorioIcons.Fluid_Lubricant,
-    display: 'Fluid: Lubricant',
+    display: '润滑油',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/lubricant.png',
   },
   [FactorioIcons.Fluid_MoltenCopper]: {
@@ -2761,7 +2761,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_PetroleumGas]: {
     id: FactorioIcons.Fluid_PetroleumGas,
-    display: 'Fluid: Petroleum Gas',
+    display: '石油气',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/petroleum-gas.png',
   },
   [FactorioIcons.Fluid_SimpleCoalLiquefaction]: {
@@ -2781,7 +2781,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_SulfuricAcid]: {
     id: FactorioIcons.Fluid_SulfuricAcid,
-    display: 'Fluid: Sulfuric Acid',
+    display: '硫酸',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/sulfuric-acid.png',
   },
   [FactorioIcons.Fluid_ThrusterFuel]: {
@@ -2796,12 +2796,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Fluid_Water]: {
     id: FactorioIcons.Fluid_Water,
-    display: 'Fluid: Water',
+    display: '水',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/fluid/water.png',
   },
   [FactorioIcons.Icons_Accumulator]: {
     id: FactorioIcons.Icons_Accumulator,
-    display: 'Icons: Accumulator',
+    display: '蓄电池',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/accumulator.png',
   },
   [FactorioIcons.Icons_ActiveProviderChest]: {
@@ -2816,7 +2816,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_AdvancedCircuit]: {
     id: FactorioIcons.Icons_AdvancedCircuit,
-    display: 'Icons: Advanced Circuit',
+    display: '高级电路板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/advanced-circuit.png',
   },
   [FactorioIcons.Icons_AdvancedMetallicAsteroidCrushing]: {
@@ -2941,12 +2941,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_AutomationSciencePack]: {
     id: FactorioIcons.Icons_AutomationSciencePack,
-    display: 'Icons: Automation Science Pack',
+    display: '自动化科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/automation-science-pack.png',
   },
   [FactorioIcons.Icons_Battery]: {
     id: FactorioIcons.Icons_Battery,
-    display: 'Icons: Battery',
+    display: '电池',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/battery.png',
   },
   [FactorioIcons.Icons_BatteryEquipment]: {
@@ -3351,7 +3351,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_ChemicalSciencePack]: {
     id: FactorioIcons.Icons_ChemicalSciencePack,
-    display: 'Icons: Chemical Science Pack',
+    display: '化学科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/chemical-science-pack.png',
   },
   [FactorioIcons.Icons_Cliff]: {
@@ -3386,7 +3386,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Coal]: {
     id: FactorioIcons.Icons_Coal,
-    display: 'Icons: Coal',
+    display: '煤',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/coal.png',
   },
   [FactorioIcons.Icons_Coal1]: {
@@ -3426,7 +3426,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Concrete]: {
     id: FactorioIcons.Icons_Concrete,
-    display: 'Icons: Concrete',
+    display: '混凝土',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/concrete.png',
   },
   [FactorioIcons.Icons_ConcreteFromMoltenIron]: {
@@ -3471,12 +3471,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_CopperCable]: {
     id: FactorioIcons.Icons_CopperCable,
-    display: 'Icons: Copper Cable',
+    display: '铜线',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/copper-cable.png',
   },
   [FactorioIcons.Icons_CopperOre]: {
     id: FactorioIcons.Icons_CopperOre,
-    display: 'Icons: Copper Ore',
+    display: '铜矿',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/copper-ore.png',
   },
   [FactorioIcons.Icons_CopperOre1]: {
@@ -3501,7 +3501,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_CopperPlate]: {
     id: FactorioIcons.Icons_CopperPlate,
-    display: 'Icons: Copper Plate',
+    display: '铜板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/copper-plate.png',
   },
   [FactorioIcons.Icons_CopperStromatolite]: {
@@ -3721,12 +3721,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_ElectricEngineUnit]: {
     id: FactorioIcons.Icons_ElectricEngineUnit,
-    display: 'Icons: Electric Engine Unit',
+    display: '电动机',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/electric-engine-unit.png',
   },
   [FactorioIcons.Icons_ElectricFurnace]: {
     id: FactorioIcons.Icons_ElectricFurnace,
-    display: 'Icons: Electric Furnace',
+    display: '电炉',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/electric-furnace.png',
   },
   [FactorioIcons.Icons_ElectricMiningDrill]: {
@@ -3746,7 +3746,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_ElectronicCircuit]: {
     id: FactorioIcons.Icons_ElectronicCircuit,
-    display: 'Icons: Electronic Circuit',
+    display: '电子电路板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/electronic-circuit.png',
   },
   [FactorioIcons.Icons_ElevatedCurvedRail]: {
@@ -3781,7 +3781,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_EngineUnit]: {
     id: FactorioIcons.Icons_EngineUnit,
-    display: 'Icons: Engine Unit',
+    display: '引擎',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/engine-unit.png',
   },
   [FactorioIcons.Icons_ExoskeletonEquipment]: {
@@ -3796,7 +3796,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_ExplosiveCannonShell]: {
     id: FactorioIcons.Icons_ExplosiveCannonShell,
-    display: 'Icons: Explosive Cannon Shell',
+    display: '爆破炮弹',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/explosive-cannon-shell.png',
   },
   [FactorioIcons.Icons_ExplosiveRocket]: {
@@ -3811,7 +3811,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Explosives]: {
     id: FactorioIcons.Icons_Explosives,
-    display: 'Icons: Explosives',
+    display: '炸药',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/explosives.png',
   },
   [FactorioIcons.Icons_ExpressLoader]: {
@@ -3881,7 +3881,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_FirearmMagazine]: {
     id: FactorioIcons.Icons_FirearmMagazine,
-    display: 'Icons: Firearm Magazine',
+    display: '弹药匣',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/firearm-magazine.png',
   },
   [FactorioIcons.Icons_Fish]: {
@@ -3931,7 +3931,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_FlyingRobotFrame]: {
     id: FactorioIcons.Icons_FlyingRobotFrame,
-    display: 'Icons: Flying Robot Frame',
+    display: '飞行机器人框架',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/flying-robot-frame.png',
   },
   [FactorioIcons.Icons_Foundation]: {
@@ -4046,7 +4046,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Grenade]: {
     id: FactorioIcons.Icons_Grenade,
-    display: 'Icons: Grenade',
+    display: '手榴弹',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/grenade.png',
   },
   [FactorioIcons.Icons_GunTurret]: {
@@ -4156,7 +4156,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Inserter]: {
     id: FactorioIcons.Icons_Inserter,
-    display: 'Icons: Inserter',
+    display: '机械臂',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/inserter.png',
   },
   [FactorioIcons.Icons_IronBacteria]: {
@@ -4191,12 +4191,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_IronGearWheel]: {
     id: FactorioIcons.Icons_IronGearWheel,
-    display: 'Icons: Iron Gear Wheel',
+    display: '铁齿轮',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/iron-gear-wheel.png',
   },
   [FactorioIcons.Icons_IronOre]: {
     id: FactorioIcons.Icons_IronOre,
-    display: 'Icons: Iron Ore',
+    display: '铁矿',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/iron-ore.png',
   },
   [FactorioIcons.Icons_IronOre1]: {
@@ -4221,12 +4221,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_IronPlate]: {
     id: FactorioIcons.Icons_IronPlate,
-    display: 'Icons: Iron Plate',
+    display: '铁板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/iron-plate.png',
   },
   [FactorioIcons.Icons_IronStick]: {
     id: FactorioIcons.Icons_IronStick,
-    display: 'Icons: Iron Stick',
+    display: '铁棒',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/iron-stick.png',
   },
   [FactorioIcons.Icons_IronStromatolite]: {
@@ -4416,7 +4416,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_LogisticSciencePack]: {
     id: FactorioIcons.Icons_LogisticSciencePack,
-    display: 'Icons: Logistic Science Pack',
+    display: '物流科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/logistic-science-pack.png',
   },
   [FactorioIcons.Icons_LongHandedInserter]: {
@@ -4426,7 +4426,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_LowDensityStructure]: {
     id: FactorioIcons.Icons_LowDensityStructure,
-    display: 'Icons: Low Density Structure',
+    display: '低密度结构',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/low-density-structure.png',
   },
   [FactorioIcons.Icons_Market]: {
@@ -4541,7 +4541,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_MilitarySciencePack]: {
     id: FactorioIcons.Icons_MilitarySciencePack,
-    display: 'Icons: Military Science Pack',
+    display: '军事科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/military-science-pack.png',
   },
   [FactorioIcons.Icons_ModularArmor]: {
@@ -4561,7 +4561,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_NuclearFuel]: {
     id: FactorioIcons.Icons_NuclearFuel,
-    display: 'Icons: Nuclear Fuel',
+    display: '核燃料',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/nuclear-fuel.png',
   },
   [FactorioIcons.Icons_NuclearFuelLight]: {
@@ -4691,7 +4691,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_PiercingRoundsMagazine]: {
     id: FactorioIcons.Icons_PiercingRoundsMagazine,
-    display: 'Icons: Piercing Rounds Magazine',
+    display: '穿甲弹匣',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/piercing-rounds-magazine.png',
   },
   [FactorioIcons.Icons_PiercingShotgunShell]: {
@@ -4701,7 +4701,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Pipe]: {
     id: FactorioIcons.Icons_Pipe,
-    display: 'Icons: Pipe',
+    display: '管道',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/pipe.png',
   },
   [FactorioIcons.Icons_PipeToGround]: {
@@ -4721,7 +4721,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_PlasticBar]: {
     id: FactorioIcons.Icons_PlasticBar,
-    display: 'Icons: Plastic Bar',
+    display: '塑料',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/plastic-bar.png',
   },
   [FactorioIcons.Icons_PoisonCapsule]: {
@@ -4731,7 +4731,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_PowerArmor]: {
     id: FactorioIcons.Icons_PowerArmor,
-    display: 'Icons: Power Armor',
+    display: '能量装甲',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/power-armor.png',
   },
   [FactorioIcons.Icons_PowerArmorMk2]: {
@@ -4746,17 +4746,17 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_ProcessingUnit]: {
     id: FactorioIcons.Icons_ProcessingUnit,
-    display: 'Icons: Processing Unit',
+    display: '运算单元',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/processing-unit.png',
   },
   [FactorioIcons.Icons_ProductionSciencePack]: {
     id: FactorioIcons.Icons_ProductionSciencePack,
-    display: 'Icons: Production Science Pack',
+    display: '生产科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/production-science-pack.png',
   },
   [FactorioIcons.Icons_ProductivityModule]: {
     id: FactorioIcons.Icons_ProductivityModule,
-    display: 'Icons: Productivity Module',
+    display: '产能插件',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/productivity-module.png',
   },
   [FactorioIcons.Icons_ProductivityModule2]: {
@@ -4841,12 +4841,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Radar]: {
     id: FactorioIcons.Icons_Radar,
-    display: 'Icons: Radar',
+    display: '雷达',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/radar.png',
   },
   [FactorioIcons.Icons_Rail]: {
     id: FactorioIcons.Icons_Rail,
-    display: 'Icons: Rail',
+    display: '铁轨',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/rail.png',
   },
   [FactorioIcons.Icons_RailChainSignal]: {
@@ -4926,7 +4926,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_RepairPack]: {
     id: FactorioIcons.Icons_RepairPack,
-    display: 'Icons: Repair Pack',
+    display: '维修包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/repair-pack.png',
   },
   [FactorioIcons.Icons_RequesterChest]: {
@@ -4946,7 +4946,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_RocketFuel]: {
     id: FactorioIcons.Icons_RocketFuel,
-    display: 'Icons: Rocket Fuel',
+    display: '火箭燃料',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/rocket-fuel.png',
   },
   [FactorioIcons.Icons_RocketFuelFromJelly]: {
@@ -4961,7 +4961,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_RocketPart]: {
     id: FactorioIcons.Icons_RocketPart,
-    display: 'Icons: Rocket Part',
+    display: '火箭组件',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/rocket-part.png',
   },
   [FactorioIcons.Icons_RocketSilo]: {
@@ -4976,7 +4976,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Satellite]: {
     id: FactorioIcons.Icons_Satellite,
-    display: 'Icons: Satellite',
+    display: '卫星',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/satellite.png',
   },
   [FactorioIcons.Icons_Science]: {
@@ -5136,7 +5136,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_SolarPanel]: {
     id: FactorioIcons.Icons_SolarPanel,
-    display: 'Icons: Solar Panel',
+    display: '太阳能板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/solar-panel.png',
   },
   [FactorioIcons.Icons_SolarPanelEquipment]: {
@@ -5151,7 +5151,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_SolidFuel]: {
     id: FactorioIcons.Icons_SolidFuel,
-    display: 'Icons: Solid Fuel',
+    display: '固体燃料',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/solid-fuel.png',
   },
   [FactorioIcons.Icons_SolidFuelFromAmmonia]: {
@@ -5201,12 +5201,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_SpaceSciencePack]: {
     id: FactorioIcons.Icons_SpaceSciencePack,
-    display: 'Icons: Space Science Pack',
+    display: '太空科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/space-science-pack.png',
   },
   [FactorioIcons.Icons_SpeedModule]: {
     id: FactorioIcons.Icons_SpeedModule,
-    display: 'Icons: Speed Module',
+    display: '速度插件',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/speed-module.png',
   },
   [FactorioIcons.Icons_SpeedModule2]: {
@@ -5306,7 +5306,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_SteelPlate]: {
     id: FactorioIcons.Icons_SteelPlate,
-    display: 'Icons: Steel Plate',
+    display: '钢板',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/steel-plate.png',
   },
   [FactorioIcons.Icons_Stingfrond]: {
@@ -5316,7 +5316,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Stone]: {
     id: FactorioIcons.Icons_Stone,
-    display: 'Icons: Stone',
+    display: '石头',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/stone.png',
   },
   [FactorioIcons.Icons_Stone1]: {
@@ -5336,7 +5336,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_StoneBrick]: {
     id: FactorioIcons.Icons_StoneBrick,
-    display: 'Icons: Stone Brick',
+    display: '石砖',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/stone-brick.png',
   },
   [FactorioIcons.Icons_StoneFurnace]: {
@@ -5371,7 +5371,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Sulfur]: {
     id: FactorioIcons.Icons_Sulfur,
-    display: 'Icons: Sulfur',
+    display: '硫磺',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/sulfur.png',
   },
   [FactorioIcons.Icons_SulfuricAcidGeyser]: {
@@ -5446,7 +5446,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_TransportBelt]: {
     id: FactorioIcons.Icons_TransportBelt,
-    display: 'Icons: Transport Belt',
+    display: '传送带',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/transport-belt.png',
   },
   [FactorioIcons.Icons_Tree01]: {
@@ -5666,12 +5666,12 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Uranium235]: {
     id: FactorioIcons.Icons_Uranium235,
-    display: 'Icons: Uranium 235',
+    display: '铀-235',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/uranium-235.png',
   },
   [FactorioIcons.Icons_Uranium238]: {
     id: FactorioIcons.Icons_Uranium238,
-    display: 'Icons: Uranium 238',
+    display: '铀-238',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/uranium-238.png',
   },
   [FactorioIcons.Icons_UraniumCannonShell]: {
@@ -5686,7 +5686,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_UraniumFuelCell]: {
     id: FactorioIcons.Icons_UraniumFuelCell,
-    display: 'Icons: Uranium Fuel Cell',
+    display: '铀燃料棒',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/uranium-fuel-cell.png',
   },
   [FactorioIcons.Icons_UraniumFuelCellLight]: {
@@ -5696,7 +5696,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_UraniumOre]: {
     id: FactorioIcons.Icons_UraniumOre,
-    display: 'Icons: Uranium Ore',
+    display: '铀矿',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/uranium-ore.png',
   },
   [FactorioIcons.Icons_UraniumOre1]: {
@@ -5731,7 +5731,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_UtilitySciencePack]: {
     id: FactorioIcons.Icons_UtilitySciencePack,
-    display: 'Icons: Utility Science Pack',
+    display: '效能科技包',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/utility-science-pack.png',
   },
   [FactorioIcons.Icons_Vulcanus]: {
@@ -5751,7 +5751,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Wall]: {
     id: FactorioIcons.Icons_Wall,
-    display: 'Icons: Wall',
+    display: '墙',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/wall.png',
   },
   [FactorioIcons.Icons_WaterCane]: {
@@ -5776,7 +5776,7 @@ export const FACTORIO_ICONS_INFO: Record<FactorioIcons, FactorioIconsInfo> = {
   },
   [FactorioIcons.Icons_Wood]: {
     id: FactorioIcons.Icons_Wood,
-    display: 'Icons: Wood',
+    display: '木材',
     url: 'https://raw.githubusercontent.com/deniszholob/icons-factorio/refs/heads/main/factorio-icons/base/icons/wood.png',
   },
   [FactorioIcons.Icons_WoodenChest]: {

@@ -1,7 +1,7 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <div class="row align-items-center">
     <p class="col-12 col-sm-4 text-center">
-      <span class="text-muted">Simple Build Ratio</span><br />
+      <span class="text-muted">简单建造比例</span><br />
       <ng-container *ngFor="let item of sheetData?.simpleRatio">
         <app-factorio-icon [icon]="dataService.getFactorioIcon(item?.iconId, item?.count)"></app-factorio-icon>
       </ng-container>
@@ -13,7 +13,7 @@
     </p>
 
     <p class="col-12 col-sm-4 text-center">
-      <span class="text-muted">Common Build Ratio <a [routerLink]="[]" fragment="note_build_ratios">^</a></span
+      <span class="text-muted">常用建造比例 <a [routerLink]="[]" fragment="note_build_ratios">^</a></span
       ><br />
       <ng-container *ngFor="let item of sheetData?.commonRatio">
         <app-factorio-icon [icon]="dataService.getFactorioIcon(item?.iconId, item?.count)"></app-factorio-icon>
@@ -26,7 +26,7 @@
     </p>
 
     <p class="col-12 col-sm-4 text-center">
-      <span class="text-muted">Pump Ratio <a [routerLink]="[]" fragment="note_build_ratios">^</a></span
+      <span class="text-muted">泵比例 <a [routerLink]="[]" fragment="note_build_ratios">^</a></span
       ><br />
       <ng-container *ngFor="let item of sheetData?.pumpRatio">
         <app-factorio-icon [icon]="dataService.getFactorioIcon(item?.iconId, item?.count)"></app-factorio-icon>
@@ -39,9 +39,8 @@
     </p>
   </div>
   <p class="text-muted text-center" id="note_build_ratios">
-    <strong>^Note:</strong> Pumps, Steam Turbines and Power are approximate for easier build ratios. See
-    <a [routerLink]="[]" fragment="nuclear-table">table below</a>
-    for precise numbers.
+    <strong>^注意：</strong>泵、蒸汽涡轮机和功率是近似值，以便于建造比例计算。查看<a [routerLink]="[]" fragment="nuclear-table">下表</a
+    >了解精确数值。
   </p>
 
   <div class="row align-items-center">
@@ -85,38 +84,35 @@
   </div>
 
   <hr />
-  <h4 class="card-title">Summary</h4>
+  <h4 class="card-title">概要</h4>
 
   <ul>
     <li>
-      One uranium fuel cell will
-      <a href="https://wiki.factorio.com/Nuclear_reactor" target="_blank" rel="noopener">always last</a>
-      200 sec, even if the produced heat does not get consumed, so the rest of the energy is wasted if not used.
+      一个铀燃料棒<a href="https://wiki.factorio.com/Nuclear_reactor" target="_blank" rel="noopener">总是持续</a> 200
+      秒，即使产生的热量未被消耗，剩余的能量也会被浪费。
+    </li>
+    <li>为防止能量浪费，可以缓冲未使用的能量，并在能量缓冲器（如储液罐或蓄电池）装满之前关闭核反应堆。</li>
+    <li>核反应堆完全加热后会缓冲价值 500 °C 的能量。热管、蒸汽管和热交换器也会缓冲能量。</li>
+    <li>一个储存 25k 单位 500 °C 蒸汽的储液罐包含 2.425 GJ 能量，相当于 485 个满电的蓄电池！</li>
+    <li>
+      <a href="https://wiki.factorio.com/Nuclear_reactor" target="_blank" rel="noopener">反应堆</a>
+      直接放置在另一个反应堆旁边时，能量输出增加 100%。
     </li>
     <li>
-      To prevent energy waste, unused energy could be buffered and the nuclear reactor setup switched off before the energy buffer, such as
-      steam tanks or accumulators, are full.
-    </li>
-    <li>
-      A nuclear reactor buffers 500 °C worth of energy after it fully heated up. Heat pipes, steam pipes and heat exchangers also buffer
-      energy.
-    </li>
-    <li>
-      A Storage tank holding 25k units of Steam at 500 °C contains 2.425 GJ of energy, which is equal to 485 fully charged Accumulators!
-    </li>
-    <li>
-      <a href="https://wiki.factorio.com/Nuclear_reactor" target="_blank" rel="noopener">Reactors</a>
-      experience a 100% increase in energy output when placed directly next to another reactor.
-    </li>
-    <li>
-      One Offshore pump can fully supply {{sheetData?.pumpRatio?.[1]?.count ?? '???'}}
-      <a href="https://wiki.factorio.com/Heat_exchanger" target="_blank" rel="noopener">Heat Exchangers</a>
-      driving {{sheetData?.pumpRatio?.[2]?.count ?? '???'}}
-      <a href="https://wiki.factorio.com/Steam_turbine" target="_blank" rel="noopener">Steam Turbines</a>
-      producing
+      一个抽水机可以完全供应 {{sheetData?.pumpRatio?.[1]?.count ?? '???'}} 个<a
+        href="https://wiki.factorio.com/Heat_exchanger"
+        target="_blank"
+        rel="noopener"
+        >热交换器</a
+      >，驱动 {{sheetData?.pumpRatio?.[2]?.count ?? '???'}} 个<a
+        href="https://wiki.factorio.com/Steam_turbine"
+        target="_blank"
+        rel="noopener"
+        >蒸汽涡轮机</a
+      >，产生
       <a href="https://www.reddit.com/r/factorio/comments/761o4u/the_factorio_cheat_sheet_v015/doboeb4/" target="_blank" rel="noopener">
         {{ sheetData?.pumpRatioPower }} </a
-      >.
+      >。
     </li>
   </ul>
 
@@ -128,15 +124,14 @@
           href="https://factoriolab.github.io/list?z=eJxTK3SJ0DKMd3bUMtAzMFMr1tJyyq9zSatzSa9zyahzyaxzyapzya5zyVErMwUAINwN.A__&v=5"
           target="_blank"
           rel="noopener noreferrer"
-          >You will need
+          >你需要
         </a>
-        1 centrifuge to produce U-235 to make fuel for 1 Reactor continuously.<br />
-        3 uranium ore miners will sustain production.
+        1 个离心机持续生产 U-235 来为 1 个反应堆制造燃料。<br />
+        3 个铀矿采矿机将维持生产。
       </p>
       <p>
-        It takes 1 U-235 and 19 U-238 to create 10
-        <a href="https://wiki.factorio.com/Uranium_fuel_cell" target="_blank" rel="noopener">fuel cells</a>, but you can reprocess 10 used
-        up uranium fuel cells to get 6 U-238, which results in a ratio of 13 U-238 to 1 U-235.
+        制作 10 个<a href="https://wiki.factorio.com/Uranium_fuel_cell" target="_blank" rel="noopener">燃料棒</a>需要 1 个 U-235 和 19 个
+        U-238，但你可以再处理 10 个用过的铀燃料棒以获得 6 个 U-238，这导致比例为 13 个 U-238 对 1 个 U-235。
       </p>
     </div>
 
@@ -164,10 +159,13 @@
   </div>
 
   <hr />
-  <h4 class="card-title" id="nuclear-sre-diagrams">SRE Diagrams</h4>
-  <strong>Single Reactor Equivalence:</strong> Because of the
-  <a href="https://wiki.factorio.com/Nuclear_reactor#Neighbour_bonus" target="_blank" rel="noopener noreferrer"> neighbor bonus </a>
-  ; 1 reactor can be equivalent to up to 5 stand-alone reactors. <br />
+  <h4 class="card-title" id="nuclear-sre-diagrams">SRE 图示</h4>
+  <strong>单反应堆等效值（SRE）：</strong>由于<a
+    href="https://wiki.factorio.com/Nuclear_reactor#Neighbour_bonus"
+    target="_blank"
+    rel="noopener noreferrer"
+    >邻接加成</a
+  >，1 个反应堆最多可以等效于 5 个独立反应堆。<br />
 
   <div class="row">
     <div class="col-12 col-md-6 pb-2">
@@ -179,28 +177,22 @@
     </div>
   </div>
 
-  <strong>Note:</strong> SRE of 5 is inaccessible by inserters as the reactor is completely surrounded by other reactors <br />
-  See
-  <a href="https://factorio-nuclear-power-plant.netlify.app" target="_blank" rel="noopener noreferrer">SRE App</a>
-  by
-  <a href="https://github.com/fangyi-zhou" target="_blank" rel="noopener noreferrer">Fangyi Zhou</a>
-  for more.
+  <strong>注意：</strong>SRE 为 5 的反应堆无法被机械臂访问，因为反应堆被其他反应堆完全包围<br />
+  参阅由 <a href="https://github.com/fangyi-zhou" target="_blank" rel="noopener noreferrer">Fangyi Zhou</a> 制作的
+  <a href="https://factorio-nuclear-power-plant.netlify.app" target="_blank" rel="noopener noreferrer">SRE 应用</a>了解更多。
 
   <hr />
   <div class="row">
     <div class="col-12 col-md-5 text-center">
-      <p>
-        <strong>Most efficient setup</strong><a [routerLink]="[]" fragment="note_nuclear_effficient_setup">**</a>: a series of repeating 2x1
-        reactors
-      </p>
+      <p><strong>最高效的设置</strong><a [routerLink]="[]" fragment="note_nuclear_effficient_setup">**</a>：一系列重复的 2x1 反应堆</p>
       <img
         class="img-fluid rounded"
         loading="lazy"
         src="{{ APP_INFO.links.getLocalImagePath('nuclear-config-h.webp') }}"
-        alt="2x3 Reactor Setup"
-        title="2x3 Reactor Setup"
+        alt="2x3 反应堆设置"
+        title="2x3 反应堆设置"
       />
-      <p class="text-muted" id="note_nuclear_effficient_setup">**That gives access to every reactor</p>
+      <p class="text-muted" id="note_nuclear_effficient_setup">**可以访问每个反应堆</p>
     </div>
 
     <div class="col-12 col-md-7 text-center">
@@ -208,10 +200,10 @@
         <thead class="text-center">
           <tr>
             <th colspan="7">
-              <span class="text-muted">Nuclear Ratio Table</span>
+              <span class="text-muted">核能比例表</span>
               <div class="merged-input-group mx-auto" id="NuclearTableControls">
                 <div class="input-group">
-                  <span class="input-group-addon">Reactor Table Count</span>
+                  <span class="input-group-addon">反应堆表格数量</span>
                   <input
                     class="form-control"
                     [(ngModel)]="reactorInfoCount"
@@ -225,14 +217,14 @@
                   />
                 </div>
                 <div class="input-group">
-                  <span class="input-group-addon">Even Only</span>
+                  <span class="input-group-addon">仅偶数</span>
                   <span class="input-group-addon">
-                    <input [(ngModel)]="evenOnly" (change)="getNukeRatios()" type="checkbox" aria-label="Even Only or all" />
+                    <input [(ngModel)]="evenOnly" (change)="getNukeRatios()" type="checkbox" aria-label="仅偶数或全部" />
                   </span>
 
-                  <span class="input-group-addon">Round Up</span>
+                  <span class="input-group-addon">向上取整</span>
                   <span class="input-group-addon">
-                    <input [(ngModel)]="roundUp" (change)="getNukeRatios()" type="checkbox" aria-label="Round up or Decimal" />
+                    <input [(ngModel)]="roundUp" (change)="getNukeRatios()" type="checkbox" aria-label="向上取整或小数" />
                   </span>
                 </div>
               </div>
@@ -240,10 +232,10 @@
           </tr>
           <tr>
             <th class="d-none d-lg-table-cell">
-              <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_NuclearReactor, 'Count')"></app-factorio-icon>
+              <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_NuclearReactor, '数量')"></app-factorio-icon>
             </th>
             <th>
-              <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_NuclearReactor, 'Config')"></app-factorio-icon>
+              <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_NuclearReactor, '配置')"></app-factorio-icon>
             </th>
             <th>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_OffshorePump)"></app-factorio-icon>
@@ -258,16 +250,14 @@
               <app-icon-ratio-composite
                 [machineIconId]="FactorioIcons.Icons_StorageTank"
                 [productIconId]="FactorioIcons.Fluid_Steam"
-                [count]="'^Note'"
+                [count]="'^注意'"
               ></app-icon-ratio-composite>
             </th>
             <th>
               <i class="fa fa-bolt fa-2x txt-accent" style="vertical-align: middle" aria-hidden="true"></i>
             </th>
             <th>
-              <app-factorio-icon
-                [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_EfficiencyModule3, 'Efficiency')"
-              ></app-factorio-icon>
+              <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_EfficiencyModule3, '效率')"></app-factorio-icon>
             </th>
           </tr>
         </thead>
@@ -304,109 +294,102 @@
 
   <div class="text-muted">
     <strong>
-      ^Steam Tanks
+      ^蒸汽储液罐
       <app-icon-ratio-composite
         [machineIconId]="FactorioIcons.Icons_StorageTank"
         [productIconId]="FactorioIcons.Fluid_Steam"
         [count]="''"
       ></app-icon-ratio-composite>
-      Note:</strong
+      注意：</strong
     >
     <ul>
       <li>
-        This is steam tanks per 1 effective (neighbor bonus) nuclear reactor using 1 fuel rod not including the reactor warmup, or heat
-        stored in the reactor or pipes (both heat and steam).
+        这是每个有效的（邻接加成）核反应堆使用 1
+        个燃料棒时的蒸汽储液罐数量，不包括反应堆预热时间，或反应堆或管道中储存的热量（包括热量和蒸汽）。
       </li>
-      <li>
-        The tanks are used for hyper efficient "pulse reactors", which produce a bunch of steam at once, since you can't turn off a reactor
-        mid-fuel cell.
-      </li>
-      <li>The amount is how many tanks you'd need to store all the steam produced in one cycle</li>
-      <li>Only use this for "pulse" builds, otherwise can ignore if don't care about being hyper efficient</li>
+      <li>这些储液罐用于超高效的"脉冲反应堆"，它们一次产生大量蒸汽，因为你无法在燃料棒中途关闭反应堆。</li>
+      <li>这个数量是储存一个周期产生的所有蒸汽所需的储液罐数量</li>
+      <li>仅在"脉冲"建造中使用，否则如果不关心超高效率可以忽略</li>
     </ul>
   </div>
 
   <hr class="print-page-break" />
-  <h4 class="card-title" id="nuclear-formulas">Formulas</h4>
+  <h4 class="card-title" id="nuclear-formulas">公式</h4>
   <p>
-    See this
-    <a href="https://www.reddit.com/r/factorio/comments/67xgge/nuclear_ratios/" target="_blank" rel="noopener"
-      >Reddit post about Nuclear Ratios</a
-    >
-    and,
-    <a href="https://wiki.factorio.com/Tutorial:Nuclear_power" target="_blank" rel="noopener">Nuclear Guide</a>
-    Wiki for more details.
+    查看这个<a href="https://www.reddit.com/r/factorio/comments/67xgge/nuclear_ratios/" target="_blank" rel="noopener"
+      >关于核能比例的 Reddit 帖子</a
+    >和<a href="https://wiki.factorio.com/Tutorial:Nuclear_power" target="_blank" rel="noopener">核能指南</a>百科了解更多详情。
   </p>
 
   <table class="table table-sm table-hover">
     <thead>
       <tr>
-        <th>Unknown</th>
-        <th>Formula</th>
-        <th>Expanded Formula</th>
+        <th>未知数</th>
+        <th>公式</th>
+        <th>展开公式</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          <kbd>Heat Exchangers Per Reactor</kbd>
+          <kbd>每个反应堆的热交换器数</kbd>
         </td>
         <td>
           <kbd>{{ nuclearData.reactorPower / nuclearData.heatExchangerPower }}</kbd>
         </td>
         <td>
-          <kbd>Reactor Power({{ nuclearData.reactorPower }}MW) / H.E. Power({{ nuclearData.heatExchangerPower }}MW)</kbd>
+          <kbd>反应堆功率({{ nuclearData.reactorPower }}MW) / 热交换器功率({{ nuclearData.heatExchangerPower }}MW)</kbd>
         </td>
       </tr>
       <tr>
         <td>
-          <kbd>Power (even config)</kbd>
+          <kbd>功率（偶数配置）</kbd>
         </td>
         <td>
-          <kbd>{{ nuclearData.reactorPower * 4 }} * [Reactors - 1]</kbd>
+          <kbd>{{ nuclearData.reactorPower * 4 }} * [反应堆数 - 1]</kbd>
         </td>
         <td>
-          <kbd>[Reactor Power({{ nuclearData.reactorPower }}MW) * 4 * Reactors] - [Reactor Power * 4]</kbd>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <kbd>Heat Exchangers (even config)</kbd>
-        </td>
-        <td>
-          <kbd>{{ (nuclearData.reactorPower / nuclearData.heatExchangerPower) * 4 }} * [Reactors - 1]</kbd>
-        </td>
-        <td>
-          <kbd>[H.E. Per Reactor * 4 * Reactors] - [H.E. Per Reactor * 4]</kbd>
+          <kbd>[反应堆功率({{ nuclearData.reactorPower }}MW) * 4 * 反应堆数] - [反应堆功率 * 4]</kbd>
         </td>
       </tr>
       <tr>
         <td>
-          <kbd>Turbines</kbd>
+          <kbd>热交换器（偶数配置）</kbd>
         </td>
         <td>
-          <kbd>{{ nuclearData.heatExchangerPower / nuclearData.turbinePower | number }} * Heat Exchangers</kbd>
+          <kbd>{{ (nuclearData.reactorPower / nuclearData.heatExchangerPower) * 4 }} * [反应堆数 - 1]</kbd>
         </td>
         <td>
-          <kbd>Heat Exchangers * H.E. Power({{ nuclearData.heatExchangerPower }}MW) / Turbine Power({{ nuclearData.turbinePower }}MW)</kbd>
+          <kbd>[每个反应堆的热交换器 * 4 * 反应堆数] - [每个反应堆的热交换器 * 4]</kbd>
         </td>
       </tr>
       <tr>
         <td>
-          <kbd>Pumps</kbd>
+          <kbd>涡轮机</kbd>
         </td>
         <td>
-          <kbd>{{ nuclearData.waterPerTurbine / nuclearData.waterPerPump | number }} * Turbines</kbd>
+          <kbd>{{ nuclearData.heatExchangerPower / nuclearData.turbinePower | number }} * 热交换器</kbd>
         </td>
         <td>
-          <kbd>Turbines * Water Per Turbine({{ nuclearData.waterPerTurbine }}) / Water Per Pump({{ nuclearData.waterPerPump }})</kbd>
+          <kbd>热交换器 * 热交换器功率({{ nuclearData.heatExchangerPower }}MW) / 涡轮机功率({{ nuclearData.turbinePower }}MW)</kbd>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <kbd>泵</kbd>
+        </td>
+        <td>
+          <kbd>{{ nuclearData.waterPerTurbine / nuclearData.waterPerPump | number }} * 涡轮机</kbd>
+        </td>
+        <td>
+          <kbd>涡轮机 * 每个涡轮机耗水({{ nuclearData.waterPerTurbine }}) / 每个泵供水({{ nuclearData.waterPerPump }})</kbd>
         </td>
       </tr>
     </tbody>
   </table>
 
   <p>
-    <strong>Steam Tanks:</strong> 1 uranium fuel cell creates 8 GJ per reactor (eg. 2 reactors put out 4 solo reactors worth of energy = 32
-    GJ). <br />Each tank can hold 2.425 GJ worth of steam, or 3.29 tanks per reactor.
+    <strong>蒸汽储液罐：</strong>1 个铀燃料棒每个反应堆产生 8 GJ（例如 2 个反应堆产出 4 个独立反应堆价值的能量 = 32 GJ）。<br />每个储液罐可以容纳价值
+    2.425 GJ 的蒸汽，或每个反应堆 3.29 个储液罐。
   </p>
 </app-cheat-sheet>

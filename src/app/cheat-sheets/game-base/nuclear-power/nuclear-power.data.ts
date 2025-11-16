@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const NUCLEAR_POWER_SHEET_NAV: NavData = newNavData(
-  'Nuclear Power',
+  '核能',
   FactorioIcons.Icons_NuclearReactor
 );
 

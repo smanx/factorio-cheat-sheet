@@ -10,7 +10,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const COMBAT_SHEET_NAV: NavData = newNavData(
-  'Combat',
+  '战斗',
   FactorioIcons.Icons_ArtilleryTurret
 );
 

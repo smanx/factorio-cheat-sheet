@@ -9,7 +9,7 @@ import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 import { MOD_LIST, ModGroup } from './popular-mods.data';
 
 export const POPULAR_MODS_SHEET_NAV: NavData = newNavData(
-  'Popular Mod List',
+  '热门模组列表',
   FactorioIcons.Icons_Parametrise
   //FactorioIcons.ModManager_Cubes
 );

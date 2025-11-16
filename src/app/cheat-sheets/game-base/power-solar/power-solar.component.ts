@@ -32,7 +32,7 @@ export interface PlanetRatioUIInfo {
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const POWER_SOLAR_SHEET_NAV: NavData = newNavData(
-  'Solar Power',
+  '太阳能',
   FactorioIcons.Icons_SolarPanel
 );
 

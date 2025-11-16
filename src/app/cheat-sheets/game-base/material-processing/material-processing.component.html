@@ -1,19 +1,19 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <p class="">
-    <strong>General Formula: </strong>
-    <kbd>Machines needed = Belt Throughput / Material Consumption Rate</kbd>
+    <strong>通用公式：</strong>
+    <kbd>所需机器数量 = 传送带吞吐量 / 材料消耗速率</kbd>
   </p>
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
       <table class="table table-sm table-hover table-bordered">
         <thead class="text-center">
           <tr>
-            <th colspan="2">Machines needed<a [routerLink]="[]" fragment="note_building_processing">^</a> to</th>
-            <th colspan="4">Empty input belt</th>
+            <th colspan="2">所需机器数量<a [routerLink]="[]" fragment="note_building_processing">^</a>以</th>
+            <th colspan="4">清空输入传送带</th>
           </tr>
           <tr>
-            <th>With</th>
-            <th>Input</th>
+            <th>使用</th>
+            <th>输入</th>
             <th>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_TransportBelt)"></app-factorio-icon>
             </th>
@@ -58,12 +58,12 @@
       <table class="table table-sm table-hover table-bordered">
         <thead class="text-center">
           <tr>
-            <th colspan="2">Machines needed<a [routerLink]="[]" fragment="note_building_processing">^</a> to</th>
-            <th colspan="4">Fill output belt</th>
+            <th colspan="2">所需机器数量<a [routerLink]="[]" fragment="note_building_processing">^</a>以</th>
+            <th colspan="4">填满输出传送带</th>
           </tr>
           <tr>
-            <th>With</th>
-            <th>Output</th>
+            <th>使用</th>
+            <th>输出</th>
             <th>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_TransportBelt)"></app-factorio-icon>
             </th>
@@ -105,38 +105,33 @@
     </div>
   </div>
 
-  <p class="text-muted" id="note_building_processing">^Machines are rounded up to the nearest whole number.</p>
+  <p class="text-muted" id="note_building_processing">^ 机器数量向上取整到最接近的整数。</p>
 
   <hr />
 
-  <h4 class="card-title" id="smelting-facts">Smelting Facts</h4>
+  <h4 class="card-title" id="smelting-facts">熔炼知识</h4>
   <div class="row align-items-center">
     <div class="col-12 col-lg-7 col-print-7">
       <ul>
         <li>
-          Smelting iron, copper, and stone each take a base 3.2 seconds to finish.
+          熔炼铁、铜和石头各需基础时间 3.2 秒。
           <br />
-          Smelting steel takes a base 16 seconds.
+          熔炼钢需基础时间 16 秒。
         </li>
         <li>
-          <a href="https://wiki.factorio.com/Stone_furnace" target="_blank" rel="noopener">Stone Furnaces</a>
-          have a crafting speed of 1.
+          <a href="https://wiki.factorio.com/Stone_furnace" target="_blank" rel="noopener">石炉</a>的制作速度为 1。
           <br />
-          Both
-          <a href="https://wiki.factorio.com/Steel_furnace" target="_blank" rel="noopener">Steel</a>
-          and
-          <a href="https://wiki.factorio.com/Electric_furnace" target="_blank" rel="noopener">Electric</a>
-          Furnaces have a crafting speed of 2.
+          <a href="https://wiki.factorio.com/Steel_furnace" target="_blank" rel="noopener">钢炉</a>和<a
+            href="https://wiki.factorio.com/Electric_furnace"
+            target="_blank"
+            rel="noopener"
+            >电炉</a
+          >的制作速度都为 2。
         </li>
+        <li>虽然铁和钢的熔炉比例是 1:1，但钢的制作时间更长，因此需要更多熔炉来填满传送带。</li>
+        <li>石炉和钢炉消耗 0.0225 煤/秒。</li>
         <li>
-          While the ratio of iron to steel furnaces is 1:1, steel takes longer to make thus many more furnaces are required to saturate a
-          belt
-        </li>
-        <li>Stone and Steel Furnaces consume 0.0225 coal/second.</li>
-        <li>
-          Common
-          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=862972621" target="_blank" rel="noopener">Smelter Arrangements</a
-          >.
+          常见的<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=862972621" target="_blank" rel="noopener">熔炉布局</a>。
         </li>
       </ul>
     </div>
@@ -173,7 +168,7 @@
 
       <table class="table table-sm fixed-width">
         <caption class="text-center">
-          Furnaces supplied by a belt of Coal
+          一条煤传送带可供应的熔炉数量
         </caption>
 
         <thead class="text-center">
@@ -208,18 +203,18 @@
     </div>
   </div>
 
-  <h4 class="card-title" id="uranium-facts">Uranium Facts</h4>
+  <h4 class="card-title" id="uranium-facts">铀知识</h4>
   <div class="row align-items-center">
     <div class="col-12 col-lg-7 col-print-7">
       <ul>
         <li>
-          <a href="https://wiki.factorio.com/Uranium_processing" target="_blank" rel="noopener">Uranium processing</a>
-          has a 99.3% chance to produce 1 uranium-238 and a 0.7% chance to produce 1 uranium-235 from 10 ore.
+          <a href="https://wiki.factorio.com/Uranium_processing" target="_blank" rel="noopener">铀处理</a>有 99.3% 的概率从 10 个矿产生 1
+          个铀-238，有 0.7% 的概率产生 1 个铀-235。
         </li>
         <li>
-          It's recommended to save up 40 U-235 to kick off the
-          <a href="https://wiki.factorio.com/Kovarex_enrichment_process" target="_blank" rel="noopener">Kovarex Enrichment Process</a>
-          in order to speed up U-235 production.
+          建议积攒 40 个 U-235 以启动<a href="https://wiki.factorio.com/Kovarex_enrichment_process" target="_blank" rel="noopener"
+            >科瓦雷克斯增殖工艺</a
+          >，从而加快 U-235 的生产。
         </li>
       </ul>
     </div>
@@ -245,9 +240,8 @@
   <hr />
   <p id="note_uranium_processing_ratio">
     <small>
-      ** 10000 not 1000 ore, as
-      <a href="https://wiki.factorio.com/Uranium_processing" target="_blank" rel="noopener">Uranium processing</a>
-      takes 10 ore and produces 1 product on average.
+      ** 10000 而非 1000 个矿，因为<a href="https://wiki.factorio.com/Uranium_processing" target="_blank" rel="noopener">铀处理</a>需要 10
+      个矿平均产生 1 个产品。
     </small>
   </p>
 </app-cheat-sheet>

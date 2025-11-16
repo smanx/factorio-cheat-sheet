@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const VEHICLE_FUEL_BONUS_SHEET_NAV: NavData = newNavData(
-  'Vehicle Fuel Bonus',
+  '载具燃料加成',
   FactorioIcons.Icons_Locomotive
 );
 

@@ -2,18 +2,18 @@
   <table class="table table-sm table-hover fixed-width">
     <caption class="text-center">
       <app-blueprint-clipboard [url]="sheetData?.blueprint" style="display: contents"></app-blueprint-clipboard>
-      Suggested Locomotive/Stop colors based on cargo
+      根据货物建议的机车/车站颜色
       <br />
-      Trains will match the color of the destination stop, unless overridden.
+      火车会匹配目的地车站的颜色，除非被覆盖。
       <br />
-      Also see
-      <a href="https://mods.factorio.com/mod/Automatic_Train_Painter" target="_blank" rel="noopener"> Train Painter Mod </a
-      >.
+      另见
+      <a href="https://mods.factorio.com/mod/Automatic_Train_Painter" target="_blank" rel="noopener">火车涂装 Mod</a
+      >。
       <br />
 
       <div class="d-none-print">
         <a href="https://www.reddit.com/r/factorio/comments/5e3uuf/what_is_your_color_scheme_for_trains/" target="_blank" rel="noopener">
-          Tailored
+          定制
         </a>
         <label class="switch">
           <input [(ngModel)]="generated" (ngModelChange)="filter()" type="checkbox" />
@@ -24,24 +24,24 @@
           target="_blank"
           rel="noopener"
         >
-          Generated
+          自动生成
         </a>
       </div>
       <div class="input-group d-none-print">
-        <input class="form-control" [(ngModel)]="filterString" (ngModelChange)="filter()" type="text" placeholder="Filter" />
+        <input class="form-control" [(ngModel)]="filterString" (ngModelChange)="filter()" type="text" placeholder="筛选" />
       </div>
     </caption>
 
     <thead class="text-left">
       <tr>
-        <th>Train Type</th>
-        <th>RGB String</th>
-        <th>Color</th>
+        <th>火车类型</th>
+        <th>RGB 字符串</th>
+        <th>颜色</th>
       </tr>
     </thead>
     <tbody>
       <caption class="d-flex d-none-print" *ngIf="!displayedData || displayedData.length === 0">
-        Nothing found.
+        未找到结果。
       </caption>
       <tr *ngFor="let item of displayedData">
         <td>

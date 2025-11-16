@@ -1,17 +1,17 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <ul>
     <li>
-      <a href="https://wiki.factorio.com/Research" target="_blank" rel="noopener"> Research </a>
-      is balanced in the number of different science packs required, so optimally all science should be produced at the same rate.
+      <a href="https://wiki.factorio.com/Research" target="_blank" rel="noopener">研究</a
+      >在所需不同科技包数量上是平衡的，因此最优情况下所有科技包应以相同速率生产。
     </li>
     <li>
-      <a href="https://wiki.factorio.com/Science_pack" target="_blank" rel="noopener"> Science Packs </a>
-      have various crafting times and outputs; you'll need different number of assemblers making each type to prevent bottlenecks.
+      <a href="https://wiki.factorio.com/Science_pack" target="_blank" rel="noopener">科技包</a
+      >具有不同的制作时间和产出；你需要不同数量的组装机制作每种类型以防止瓶颈。
     </li>
   </ul>
 
   <div class="text-center">
-    <span class="text-muted">Number of assemblers needed to produce science equally (Base Game)</span>
+    <span class="text-muted">均等生产科技包所需的组装机数量（基础游戏）</span>
     <div>
       <app-icon-ratio-composite
         class="d-none d-sm-inline-block"
@@ -51,21 +51,20 @@
   <br />
   <ul>
     <li>
-      Check the
-      <a [routerLink]="[]" fragment="common-ratios">ratios for each science pack</a>.
+      查看
+      <a [routerLink]="[]" fragment="common-ratios">各科技包的比例</a>。
     </li>
     <li>
-      Check your
-      <a href="{{ scienceRequirementsLink }}" target="_blank" rel="noopener"> Resource requirements </a>
-      to keep production steady.
+      检查你的
+      <a href="{{ scienceRequirementsLink }}" target="_blank" rel="noopener"> 资源需求 </a>
+      以保持生产稳定。
     </li>
-    <li>Use inserters to move science packs between labs.</li>
+    <li>使用机械臂在实验室之间移动科技包。</li>
     <li>
-      Launching 1-100
-      <a href="https://wiki.factorio.com/Space_science_pack" target="_blank" rel="noopener">Space science</a>
-      in a rocket will give you 1-100
-      <a href="https://wiki.factorio.com/Raw_fish" target="_blank" rel="noopener">Fish</a>
-      respectively.
+      在火箭中发射 1-100 个
+      <a href="https://wiki.factorio.com/Space_science_pack" target="_blank" rel="noopener">太空科技包</a>
+      会分别给你 1-100 条
+      <a href="https://wiki.factorio.com/Raw_fish" target="_blank" rel="noopener">鱼</a>。
     </li>
   </ul>
 
@@ -73,22 +72,22 @@
   <div class="row align-items-center">
     <div class="col-12 col-lg-6">
       <p class="text-center">
-        <strong>Space science (Base Game)</strong>
+        <strong>太空科技（基础游戏）</strong>
       </p>
-      <p>For 1 space science pack per second you must launch a rocket with a satellite every 16.67 minutes.<br /></p>
+      <p>要达到每秒 1 个太空科技包，你必须每 16.67 分钟发射一枚携带卫星的火箭。<br /></p>
       <p class="text-center">
-        <kbd>Rockets launch interval (in minutes) = (1000 science / (assembler speed * ratio multiplier)) * (1min/60sec)</kbd>
+        <kbd>火箭发射间隔（分钟）= (1000 科技包 / (组装机速度 * 比例倍数)) * (1分钟/60秒)</kbd>
       </p>
     </div>
     <div class="col-12 col-lg-6">
       <div class="merged-input-group">
         <div class="input-group">
-          <span class="input-group-addon">Rocket launch every</span>
+          <span class="input-group-addon">火箭发射间隔</span>
           <input class="form-control" [value]="rocketCalcData.rocketRate | number : '1.0-0'" type="text" readonly />
-          <span class="input-group-addon">Minutes</span>
+          <span class="input-group-addon">分钟</span>
         </div>
         <div class="input-group">
-          <span class="input-group-addon">Science Per Launch</span>
+          <span class="input-group-addon">每次发射科技包数</span>
           <input
             class="form-control"
             [(ngModel)]="rocketCalcData.sciencePerLaunch"
@@ -99,7 +98,7 @@
           />
         </div>
         <div class="input-group">
-          <span class="input-group-addon">Assembler Speed</span>
+          <span class="input-group-addon">组装机速度</span>
           <input
             class="form-control"
             [(ngModel)]="rocketCalcData.assemblerSpeed"
@@ -111,7 +110,7 @@
           />
         </div>
         <div class="input-group">
-          <span class="input-group-addon">Ratio Multiplier</span>
+          <span class="input-group-addon">比例倍数</span>
           <input
             class="form-control"
             [(ngModel)]="rocketCalcData.ratioMultiplier"
@@ -129,26 +128,26 @@
   <div class="row align-items-center">
     <div class="col-12 col-lg-12">
       <p class="text-center">
-        <strong>Calculator for number of labs required and science ratios</strong>
+        <strong>所需实验室数量和科技包比例计算器</strong>
       </p>
     </div>
   </div>
 
   <p class="">
-    <b>Packs Per Minute</b> - Target science production rate. <br />
-    <b>Research Cycle Time</b> - Time in seconds to complete one research cycle, this is usually 60 seconds for all infinite tech.<br />
-    <b>Lab Speed</b> - Total Speed as reported by the lab, including modules and beacons. -
-    <small>Default numbers assume a 12 beacon setup, which is researching a 60 second infinite tech.</small><br />
-    <b>Lab Productivity Bonus %</b> - Lab productivity +xx% bonus as reported by the lab.<br />
+    <b>每分钟科技包数</b> - 目标科技包生产速率。 <br />
+    <b>研究周期时间</b> - 完成一个研究周期的秒数，对于所有无限科技通常为 60 秒。<br />
+    <b>实验室速度</b> - 实验室显示的总速度，包括插件和插件效果分享塔。 -
+    <small>默认数值假设为 12 插件效果分享塔设置，研究 60 秒无限科技。</small><br />
+    <b>实验室产能加成 %</b> - 实验室显示的产能 +xx% 加成。<br />
   </p>
 
   <br />
-  <p class="text-muted text-center">Calculates how many labs satisfy a target production rate of science packs per minute.</p>
+  <p class="text-muted text-center">计算需要多少个实验室才能满足目标每分钟科技包生产速率。</p>
   <div class="row align-items-center">
     <div class="col-12 col-lg-3">
       <div class="eq-container">
         <div class="eq-field bg-neutral">
-          <span class="eq-label">Labs Needed</span>
+          <span class="eq-label">所需实验室数</span>
           <input class="eq-input" [value]="calcScience.labsRequired" type="text" readonly />
         </div>
         <div class="eq-operator">=</div>
@@ -157,7 +156,7 @@
     <div class="col-12 col-lg-3">
       <div class="eq-container">
         <div class="eq-field bg-factorio-yellow-muted">
-          <span class="eq-label">Packs Per Minute</span>
+          <span class="eq-label">每分钟科技包数</span>
           <input
             class="eq-input"
             [(ngModel)]="calcScience.packsPerMinute"
@@ -171,7 +170,7 @@
       <div class="eq-operator op-divide"></div>
       <div class="eq-container">
         <div class="eq-field">
-          <span class="eq-label">Seconds</span>
+          <span class="eq-label">秒数</span>
           <input class="eq-input" [value]="60" type="text" readonly min="0" />
         </div>
       </div>
@@ -186,7 +185,7 @@
     <div class="col-12 col-lg-5">
       <div class="eq-container">
         <div class="eq-field bg-factorio-green">
-          <span class="eq-label">Research cycle seconds</span>
+          <span class="eq-label">研究周期秒数</span>
           <input
             class="eq-input"
             [(ngModel)]="calcScience.researchCycleTime"
@@ -200,7 +199,7 @@
       <div class="eq-operator op-divide"></div>
       <div class="eq-container">
         <div class="eq-field bg-factorio-blue">
-          <span class="eq-label">Lab speed</span>
+          <span class="eq-label">实验室速度</span>
           <input
             class="eq-input"
             [(ngModel)]="calcScience.labSpeed"
@@ -214,7 +213,7 @@
         <div class="eq-operator">*</div>
         <div class="eq-field bg-factorio-red">
           <span class="eq-label">1 + </span>
-          <span class="eq-label">(Lab Prod bonus %</span>
+          <span class="eq-label">(实验室产能加成 %</span>
           <input
             class="eq-input"
             [(ngModel)]="calcScience.labProductivityBonusPercent"
@@ -233,7 +232,7 @@
   <br />
   <br />
   <div class="text-center">
-    <span class="text-muted">Some packs/min rate presets to try for ratios</span>
+    <span class="text-muted">一些可用于比例计算的科技包/分钟速率预设</span>
     <br />
     <div class="flex gap-2 items-center justify-center">
       <ng-container *ngFor="let rate of SCIENCE_PACK_RATES_TO_TRY">
@@ -259,10 +258,12 @@
     </div> -->
 
     <span class="text-muted">
-      Number of factories needed to produce science equally for target rate of
-      {{ calcScience.packsPerMinute }} packs/min ({{ calcScience.packsPerMinute / 60 | number : '1.0-2' }} packs/sec )
+      达到目标速率 {{ calcScience.packsPerMinute }} 科技包/分钟（{{
+        calcScience.packsPerMinute / 60 | number : '1.0-2'
+      }}
+      科技包/秒）所需的工厂数量
       <br />
-      Change packs/minute, speed, and productivity to update results
+      更改每分钟科技包数、速度和产能以更新结果
     </span>
     <br />
     <br />
@@ -323,7 +324,7 @@
 
   <br />
   <div class="text-center">
-    <span class="text-muted">Effective rate for each science pack</span>
+    <span class="text-muted">各科技包的有效速率</span>
     <div>
       <ng-container *ngFor="let ratioItem of sciencePackRatios">
         <app-icon-ratio-composite

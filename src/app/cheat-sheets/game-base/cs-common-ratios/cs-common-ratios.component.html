@@ -1,38 +1,37 @@
 <app-cheat-sheet-template [iconId]="cheatSheetIconId" [title]="cheatSheetTitle">
   <p>
-    List of common ratios between machines to produce items optimally, without stalling.<br />
-    For example: when making "Rail", the right ratio is 1 "Iron Stick" assembler feeding 2 "Rail" assemblers.<br />
-    If there is no machine mixing (assemblers/chemical plants/furnaces) then ratios stay the same between assembler tiers.<br />
+    常用机器比例列表，用于最优生产物品而不停滞。<br />
+    例如：制作"铁轨"时，正确的比例是 1 个"铁棒"组装机供应 2 个"铁轨"组装机。<br />
+    如果没有机器混合（组装机/化工厂/熔炉），则不同组装机等级之间的比例保持不变。<br />
   </p>
 
-  <p>Go to the <a [routerLink]="[]" fragment="links">links</a> section of this page, for blueprints and calculators.</p>
+  <p>前往本页的<a [routerLink]="[]" fragment="links">链接</a>部分，查找蓝图和计算器。</p>
 
   <hr />
-  <h4 class="card-title">How to calculate manually?</h4>
+  <h4 class="card-title">如何手动计算？</h4>
   <ul>
     <li>
       <kbd>Recipe Item Rate(items/second)</kbd> = [<kbd>Recipe Item Count(items)</kbd> / <kbd>Recipe Craft Time(seconds)</kbd>] *
       <kbd>(Machine)Craft Speed Multiplier</kbd>
     </li>
-    <li>Then increase machines to match up the input/output rates to get the machine ratio.</li>
+    <li>然后增加机器数量以匹配输入/输出速率，从而得到机器比例。</li>
     <li>
-      Use the
-      <a href="https://www.factorio.com/blog/post/fff-397" target="_blank" rel="noopener noreferrer"> Factoriopedia </a>
-      to get the recipe details via
-      <kbd>Alt</kbd> + <kbd>LMB</kbd> on any item in game
+      使用
+      <a href="https://www.factorio.com/blog/post/fff-397" target="_blank" rel="noopener noreferrer"> 异星工厂百科 </a>
+      通过在游戏中对任何物品按
+      <kbd>Alt</kbd> + <kbd>鼠标左键</kbd>
+      来获取配方详情
     </li>
     <li>
-      This
-      <a href="https://deniszholob.github.io/factorio-machine-ratio-calc/" target="_blank" rel="noopener">
-        Generic Production Ratio Tool
-      </a>
-      helps you keep track of these calculations.
+      这个
+      <a href="https://deniszholob.github.io/factorio-machine-ratio-calc/" target="_blank" rel="noopener"> 通用生产比例工具 </a>
+      可以帮助你跟踪这些计算。
     </li>
   </ul>
 
   <hr />
   <p class="text-center">
-    <span class="text-muted d-inline-block">Machine speeds</span>
+    <span class="text-muted d-inline-block">机器速度</span>
     <span class="d-block">
       <ng-container *ngFor="let item of MACHINE_SPEEDS">
         <app-factorio-icon class="mx-2" *ngIf="item.iconId" [icon]="dataService.getFactorioIcon(item.iconId, item.speed)">
@@ -60,10 +59,10 @@
     </div>
   </div>
 
-  <small class="text-muted">Note: rates are rounded to 2 decimal points.</small>
+  <small class="text-muted">注意：速率四舍五入到 2 位小数。</small>
 
   <hr class="print-page-break" />
-  <h4 id="rocket">Rocket Components</h4>
+  <h4 id="rocket">火箭组件</h4>
   <div class="row align-items-center">
     <p class="col-12 col-sm-4 text-center" *ngFor="let item of ROCKET_RATIO_DATA">
       <a [title]="item.description" [href]="item.source" target="_blank" rel="noopener">
@@ -76,26 +75,23 @@
 
   <ul>
     <li>
-      A Rocket needs 100
-      <a href="https://wiki.factorio.com/Rocket_part" target="_blank" rel="noopener">Rocket Parts</a>.
+      一枚火箭需要 100 个
+      <a href="https://wiki.factorio.com/Rocket_part" target="_blank" rel="noopener">火箭组件</a>。
     </li>
     <li>
-      To get
-      <a href="https://wiki.factorio.com/Space_science_pack" target="_blank" rel="noopener">Space Science</a>
-      (no productivity modules in the silo);
+      要获得
+      <a href="https://wiki.factorio.com/Space_science_pack" target="_blank" rel="noopener">太空科技包</a>
+      （发射井中无产能插件）；
       <br />
-      you need 1000 (100*10) of each Rocket component plus the items for the
-      <a href="https://wiki.factorio.com/Satellite">satellite</a>.
+      你需要每种火箭组件各 1000 个（100*10），加上制作
+      <a href="https://wiki.factorio.com/Satellite">卫星</a>所需的物品。
     </li>
     <ul>
-      <li>This is a ratio of (1100i * 10s) : (1050i * 15s) : (1100i * 15s) = 11000 : 15750 : 11000.</li>
-      <li>The simplified ratio is: 44 : 63 : 44 (dividing the ratio above by 250).</li>
-      <li>Where 20s and 30s are the respective crafting speeds of recipes.</li>
+      <li>这是一个比例为 (1100i * 10s) : (1050i * 15s) : (1100i * 15s) = 11000 : 15750 : 11000。</li>
+      <li>简化后的比例为：44 : 63 : 44（将上述比例除以 250）。</li>
+      <li>其中 20 秒和 30 秒分别是配方的制作速度。</li>
     </ul>
-    <li>The ratio given above produces 2.5 science/min, but the silo can produce 2.9 science/min.</li>
-    <li>
-      The above ratio is approximate: with level 3 productivity modules plus level 1 speed modules in 1 beacon the silo is capable of 3.9
-      science/min.
-    </li>
+    <li>上述比例产生 2.5 科技包/分钟，但发射井可以产生 2.9 科技包/分钟。</li>
+    <li>上述比例是近似值：在发射井中使用 3 级产能插件加 1 个插件效果分享塔中的 1 级速度插件，发射井能够产生 3.9 科技包/分钟。</li>
   </ul>
 </app-cheat-sheet-template>

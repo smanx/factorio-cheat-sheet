@@ -1,18 +1,19 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <p>
-    The table shows how long it takes to load, or unload, chests to a
-    <a href="https://wiki.factorio.com/Cargo_wagon" target="_blank" rel="noopener">Cargo Wagon</a>. The transfer times shown are for 6 fast
-    (or stack inserters) to 1 wagon. If you use 12 fast (or stack inserters), the transfer time is halved. The table ignores
-    <a href="https://wiki.factorio.com/Inserter_capacity_bonus_(research)" target="_blank" rel="noopener"
-      >Inserter capacity bonus (research)</a
-    >.
+    该表显示从箱子装载或卸载到<a href="https://wiki.factorio.com/Cargo_wagon" target="_blank" rel="noopener">货运车厢</a
+    >所需的时间。显示的转移时间是 6 个快速（或堆叠）机械臂对 1 个车厢。如果使用 12 个快速（或堆叠）机械臂，转移时间减半。该表忽略<a
+      href="https://wiki.factorio.com/Inserter_capacity_bonus_(research)"
+      target="_blank"
+      rel="noopener"
+      >机械臂容量加成（研究）</a
+    >。
   </p>
 
   <div class="row align-items-center">
     <div class="col-12 col-md-7 text-center">
       <table class="table table-sm table-hover fixed-width">
         <caption class="text-center">
-          Time to transfer items between wagon and chests (theoretical)
+          车厢与箱子之间转移物品的时间（理论值）
         </caption>
         <thead class="text-center">
           <tr>
@@ -20,9 +21,9 @@
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_FastInserter)"></app-factorio-icon>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_StackInserter)"></app-factorio-icon>
               <br />
-              Items
+              每次摆动
               <br />
-              per swing
+              物品数
             </th>
             <th>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Barreling_BarrelEmpty)"></app-factorio-icon>
@@ -30,9 +31,9 @@
               <br />
               <span
                 ><a [routerLink]="[]" fragment="note_wagon_transfer_barrel">*</a>
-                10 items
+                每堆叠
                 <br />
-                per stack</span
+                10 个物品</span
               >
             </th>
             <th>
@@ -40,9 +41,9 @@
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_IronOre)"></app-factorio-icon>
               <br />
               <span
-                >50 items
+                >每堆叠
                 <br />
-                per stack</span
+                50 个物品</span
               >
             </th>
             <th>
@@ -50,9 +51,9 @@
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_IronPlate)"></app-factorio-icon>
               <br />
               <span
-                >100 items
+                >每堆叠
                 <br />
-                per stack</span
+                100 个物品</span
               >
             </th>
             <th>
@@ -60,9 +61,9 @@
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_AdvancedCircuit)"></app-factorio-icon>
               <br />
               <span
-                >200 items
+                >每堆叠
                 <br />
-                per stack</span
+                200 个物品</span
               >
             </th>
           </tr>
@@ -93,7 +94,7 @@
       </table>
     </div>
     <div class="col-12 col-md-5 text-center">
-      <span><strong>Cargo Loading Setup</strong></span
+      <span><strong>货运装载设置</strong></span
       ><br />
       <img
         class="img-fluid rounded"
@@ -105,38 +106,35 @@
     </div>
   </div>
 
-  <span class="text-muted">Notes:</span>
+  <span class="text-muted">注意：</span>
   <ul class="text-muted">
     <li>
-      The transfer times listed are worse than the real transfer times! This is because inserters grab the next item(s) from the chest after
-      a wagon leaves. When the next wagon arrives, the inserter already did the first swing (to load, or unload).
+      列出的转移时间比实际转移时间更差！这是因为机械臂在车厢离开后会从箱子中抓取下一批物品。当下一个车厢到达时，机械臂已经完成了第一次摆动（装载或卸载）。
     </li>
-    <li>The times shown are for wagon to chest, or chest to wagon. Transferring from belt to wagon, or wagon to belt is slower.</li>
-    <li id="note_wagon_transfer_barrel">
-      * The barrel transfer rate does not increase when you unlock 12 items per swing, because inserters can only move a full stack (10).
-    </li>
+    <li>显示的时间是车厢到箱子或箱子到车厢的时间。从传送带到车厢或从车厢到传送带的转移更慢。</li>
+    <li id="note_wagon_transfer_barrel">* 桶的转移速率在解锁每次摆动 12 个物品时不会增加，因为机械臂只能移动完整堆叠（10 个）。</li>
   </ul>
 
   <hr />
 
   <p>
-    The next table shows how much would chests fill up with the contents of a fully loaded cargo wagon.
+    下表显示了一个满载货运车厢的内容物会填满多少箱子。
     <br />
-    Numbers showing resulting items in each chest, and numbers in [brackets] take those rounded up to the nearest stack size.
+    数字显示每个箱子中的结果物品数，[方括号]中的数字将其向上舍入到最近的堆叠大小。
   </p>
 
   <table class="table table-sm table-hover">
     <caption class="text-center">
-      Items per chest from 1 cargo wagon's worth
+      1 个货运车厢能填满的箱子中的物品数
     </caption>
     <thead class="text-center">
       <tr>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SteelChest)"></app-factorio-icon>
           <br />
-          Chests
+          每个车厢
           <br />
-          per wagon
+          的箱子数
         </th>
         <th>
           <app-factorio-icon
@@ -144,44 +142,44 @@
             [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SteelChest)"
           ></app-factorio-icon>
           <br />
-          Slots
+          每个箱子
           <br />
-          per chest
+          的格子数
         </th>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Barreling_BarrelEmpty)"></app-factorio-icon>
           <br />
           <span>
-            10 items
+            每堆叠
             <br />
-            per stack</span
+            10 个物品</span
           >
         </th>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_IronOre)"></app-factorio-icon>
           <br />
           <span
-            >50 items
+            >每堆叠
             <br />
-            per stack</span
+            50 个物品</span
           >
         </th>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_IronPlate)"></app-factorio-icon>
           <br />
           <span
-            >100 items
+            >每堆叠
             <br />
-            per stack</span
+            100 个物品</span
           >
         </th>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_ElectronicCircuit)"></app-factorio-icon>
           <br />
           <span
-            >200 items
+            >每堆叠
             <br />
-            per stack</span
+            200 个物品</span
           >
         </th>
       </tr>
@@ -203,17 +201,17 @@
     </tbody>
   </table>
 
-  <span class="text-muted">Notes: </span>
+  <span class="text-muted">注意： </span>
   <ul class="text-muted">
     <li>
-      Cargo wagon slots can be filtered with
-      <kbd>MMB</kbd>
-      and limited just like a chest.
+      货运车厢的格子可以用
+      <kbd>鼠标中键</kbd>
+      过滤，并像箱子一样限制。
     </li>
     <li>
-      Cargo wagon configuration can be copied with
-      <kbd>Shift+RMB</kbd>/<kbd>Shift+LMB</kbd>
-      on wagon, as well as on individual slots.
+      货运车厢的配置可以通过在车厢上或单个格子上使用
+      <kbd>Shift+鼠标右键</kbd>/<kbd>Shift+鼠标左键</kbd>
+      来复制。
     </li>
   </ul>
 </app-cheat-sheet>

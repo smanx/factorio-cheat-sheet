@@ -3,14 +3,14 @@
     <p class="col-12 col-sm-4 text-center">
       <span class="text-muted">
         <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_Nauvis)"></app-factorio-icon>
-        <a href="https://wiki.factorio.com/Power_production#Solar_panels_and_accumulators" target="_blank" rel="noopener"> Solar Power </a>
-        (Usable)
+        <a href="https://wiki.factorio.com/Power_production#Solar_panels_and_accumulators" target="_blank" rel="noopener">太阳能发电</a
+        >（可用）
         <a
           href="https://www.wolframalpha.com/input/?i=(+(0.5+%2B+0.2)+*+(0.1+%2B+0.2+*+(0.5+%2B+0.2)+%2F+1.0)+%2F+1.0)+*+(25000+%2F+60)+*+(60+%2F+5000)"
           target="_blank"
           rel="noopener"
         >
-          Build Ratio
+          建造比例
         </a>
       </span>
 
@@ -28,7 +28,7 @@
     </p>
 
     <p class="col-12 col-sm-4 text-center">
-      <span class="text-muted"> Solar Total to Usable (Planet Surface) </span>
+      <span class="text-muted"> 太阳能总功率到可用功率（行星表面） </span>
       <br />
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SolarPanel, '10MW')"></app-factorio-icon>
       <i class="fas fa-long-arrow-alt-right text-muted"></i>
@@ -45,28 +45,25 @@
     <div class="col-12 col-xl-8">
       <ul>
         <li>
-          <a href="https://wiki.factorio.com/Solar_panel" target="_blank" rel="noopener">Solar panels</a>
-          only provide energy during the day. <br />
-          ( {{ POWER_SOLAR_DATA.solarEnergyMaxKw }}KW Max, {{ POWER_SOLAR_DATA.solarEnergyAvgKw }}KW average per solar panel, ratio of
-          {{ POWER_SOLAR_DATA.solarPowerEffectiveness | percent }}
-          "usable" to total)
+          <a href="https://wiki.factorio.com/Solar_panel" target="_blank" rel="noopener">太阳能板</a>
+          仅在白天提供能量。 <br />
+          （每个太阳能板最大 {{ POWER_SOLAR_DATA.solarEnergyMaxKw }}KW，平均
+          {{ POWER_SOLAR_DATA.solarEnergyAvgKw }}KW，"可用"功率与总功率的比例为 {{ POWER_SOLAR_DATA.solarPowerEffectiveness | percent }}）
         </li>
         <li>
-          10MW worth of solar panels will power a factory of
-          {{ 10 * POWER_SOLAR_DATA.solarPowerEffectiveness }}MW on the planet surface (50% day and 10% night).
+          在行星表面（50% 白天和 10% 夜晚），价值 10MW 的太阳能板可以为 {{ 10 * POWER_SOLAR_DATA.solarPowerEffectiveness }}MW 的工厂供电。
         </li>
         <li>
-          During the day, excess power generated is stored in
-          <a href="https://wiki.factorio.com/Accumulator" target="_blank" rel="noopener">accumulators</a>, during the night, accumulators
-          release their charge to power your factory.
+          白天，多余的电力储存在<a href="https://wiki.factorio.com/Accumulator" target="_blank" rel="noopener">蓄电池</a
+          >中；夜间，蓄电池释放电量为工厂供电。
         </li>
-        <li>TLDR for Nauvis; <kbd>#Accumulators</kbd> = <kbd>#Solar panels</kbd> * <kbd>0.84</kbd></li>
+        <li>对于诺维斯星；<kbd>蓄电池数量</kbd> = <kbd>太阳能板数量</kbd> * <kbd>0.84</kbd></li>
         <li>
-          As Needed a.k.a YOLO placement:
+          按需放置：
           <ul>
-            <li>Place accumulators until they can keep your factory powered through the night.</li>
-            <li>Add some extra accumulators to account for burst consumption, such as firing a lot of lasers.</li>
-            <li>Then place solar panels until those accumulators are fully charged by the end of the day.</li>
+            <li>放置蓄电池，直到它们能让工厂在夜间保持供电。</li>
+            <li>额外添加一些蓄电池，以应对突发消耗，例如大量激光炮射击。</li>
+            <li>然后放置太阳能板，直到这些蓄电池在白天结束时完全充满电。</li>
           </ul>
         </li>
       </ul>
@@ -77,7 +74,7 @@
         <!--TODO: Mod Calculator to use Planet Ratios [solarAvgMw]="selectedPlanetRatio.planetRatioData.effectiveSolarPowerGroundKw / 1000" -->
         <span class="text-muted text-center">
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_Nauvis)"></app-factorio-icon>
-          Nauvis Solar Calculator
+          诺维斯太阳能计算器
         </span>
         <app-calculator-solar
           [solarPowerEffectiveness]="POWER_SOLAR_DATA.solarBuildRatio.solarRatioPowerMw"
@@ -91,7 +88,7 @@
 
   <div class="d-flex flex-row align-items-center justify-content-center">
     <div class="input-group d-none-print" [style.width]="'auto'">
-      <span class="input-group-addon">Planet</span>
+      <span class="input-group-addon">行星</span>
       <div class="form-select" ngbDropdown>
         <!-- Dropdown Button -->
         <button class="btn" id="dropdownBasic1" type="button" ngbDropdownToggle>
@@ -125,7 +122,7 @@
   <div>
     <div class="row align-items-center">
       <p class="col-12 col-sm-4 text-center" *ngIf="selectedPlanetRatio.planetRatioData.effectiveSolarPowerGroundKw">
-        <span class="text-muted">Effective Ground Power</span>
+        <span class="text-muted">地面有效功率</span>
         <br />
         <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SolarPanel, 1)"></app-factorio-icon>
 
@@ -137,7 +134,7 @@
       </p>
 
       <p class="col-12 col-sm-4 text-center" *ngIf="selectedPlanetRatio.mwRatioGround">
-        <span class="text-muted">Ground Build Ratio</span>
+        <span class="text-muted">地面建造比例</span>
         <br />
         <ng-container *ngFor="let item of selectedPlanetRatio.mwRatioGround">
           <app-factorio-icon
@@ -153,7 +150,7 @@
       </p>
 
       <p class="col-12 col-sm-4 text-center" *ngIf="selectedPlanetRatio.onePanelRatio">
-        <span class="text-muted">Ground Sol/Acc Ratio</span>
+        <span class="text-muted">地面太阳能/蓄电池比例</span>
         <br />
         <ng-container *ngFor="let item of selectedPlanetRatio.onePanelRatio">
           <app-factorio-icon
@@ -163,7 +160,7 @@
       </p>
 
       <p class="col-12 col-sm-4 text-center" *ngIf="selectedPlanetRatio.planetRatioData.effectiveSolarPowerSpaceKw">
-        <span class="text-muted">Effective Space Power</span>
+        <span class="text-muted">太空有效功率</span>
         <br />
         <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SolarPanel, 1)"></app-factorio-icon>
 
@@ -175,7 +172,7 @@
       </p>
 
       <p class="col-12 col-sm-4 text-center" *ngIf="selectedPlanetRatio.mwRatioSpace">
-        <span class="text-muted">Space Build Ratio</span>
+        <span class="text-muted">太空建造比例</span>
         <br />
         <ng-container *ngFor="let item of selectedPlanetRatio.mwRatioSpace">
           <app-factorio-icon
@@ -199,7 +196,7 @@
   <hr />
 
   <small>
-    References:
+    参考资料：
     <ul class="row">
       <li class="col col-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let ref of REFERENCES">
         <a [href]="ref.url" target="_blank" rel="noopener noreferrer">{{ ref.text }}</a>

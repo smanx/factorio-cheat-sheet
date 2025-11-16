@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const INSERTER_CAPACITY_BONUS_SHEET_NAV: NavData = newNavData(
-  'Inserter Capacity Bonus',
+  '机械臂容量加成',
   FactorioIcons.Technology_InserterCapacity
 );
 

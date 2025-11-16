@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const PRODUCTIVITY_MODULE_PAYOFFS_SHEET_NAV: NavData = newNavData(
-  'Productivity Module Payoffs',
+  '产能插件回报',
   FactorioIcons.Icons_ProductivityModule3
 );
 

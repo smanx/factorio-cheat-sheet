@@ -1,66 +1,64 @@
 <app-cheat-sheet-template [iconId]="cheatSheetIconId" [title]="cheatSheetTitle">
-  There are two systems for trains/stations:
+  火车/车站有两种系统：
   <ul>
-    <li>Locomotive(s) on one end of the train. The train stops and leaves the station in the same direction. (Pass Through Station)</li>
-    <li>Locomotive(s) on both ends of the train. The train stops and leaves the station in the opposite direction. (Terminal Station)</li>
+    <li>机车在火车的一端。火车停靠后沿相同方向离开车站。（通过式车站）</li>
+    <li>机车在火车两端。火车停靠后沿相反方向离开车站。（终点式车站）</li>
   </ul>
 
-  Example station names and interrupts patterns:
+  车站名称和中断模式示例：
   <ul>
     <li>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Signal_SignalL)"></app-factorio-icon>
-      or
+      或
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Signal_SignalU)"></app-factorio-icon>
-      (load/unload)
+      （装载/卸载）
     </li>
     <li>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_CargoWagon)"></app-factorio-icon>
-      or
+      或
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_FluidWagon)"></app-factorio-icon>
-      (fluid/cargo wagon)
+      （流体/货运车厢）
     </li>
-    <li>[#locomotives in front]-[#wagons]-[#locomotives behind]</li>
+    <li>[前方机车数]-[车厢数]-[后方机车数]</li>
   </ul>
-  Example train configurations for an average game (locos on both ends of the train):
+  一般游戏的火车配置示例（两端都有机车）：
   <ul>
-    <li>2-4-2 trains, for ore.</li>
-    <li>1-2-1 trains, for oil.</li>
-    <li>1-1-1 trains, sulfuric acid for uranium ore mines.</li>
+    <li>2-4-2 火车，用于矿石。</li>
+    <li>1-2-1 火车，用于原油。</li>
+    <li>1-1-1 火车，用于铀矿的硫酸。</li>
   </ul>
 
   <h4 id="signals">
-    Signals
+    信号灯
     <small>
-      <a href="https://www.youtube.com/watch?v=oDgzDW26spc" target="_blank" rel="noopener noreferrer">tutorial</a>
+      <a href="https://www.youtube.com/watch?v=oDgzDW26spc" target="_blank" rel="noopener noreferrer">教程</a>
     </small>
   </h4>
-  <span>The main rules for signalling are:</span>
+  <span>信号灯的主要规则：</span>
   <ul>
-    <li>Chain signal before the intersection, but block signal after the intersection. "Chain in, block out."</li>
-    <li>Your longest train must fit between the signals after the intersection. This prevents deadlocks.</li>
+    <li>交叉路口前使用链式信号灯，交叉路口后使用铁路信号灯。"链式进，普通出"。</li>
+    <li>最长的火车必须能放入交叉路口后信号灯之间的区间。这可以防止死锁。</li>
   </ul>
 
   <hr />
   <h4 id="schedules">
-    Schedules
+    时刻表
     <small>
-      <a href="https://youtu.be/ks9dP8YuyOY?si=-LwPz1NM5Nne2B7g&t=96" target="_blank" rel="noopener noreferrer">tutorial</a>
+      <a href="https://youtu.be/ks9dP8YuyOY?si=-LwPz1NM5Nne2B7g&t=96" target="_blank" rel="noopener noreferrer">教程</a>
     </small>
   </h4>
 
-  An example of a train schedule with interrupts and parameters.
+  带中断和参数的火车时刻表示例。
   <br />
-  This way you can use the same schedule for all trains and use the same names for outposts. Trains go to outposts, refuel and wait at the
-  depot automatically.
+  这样你可以为所有火车使用相同的时刻表，并为前哨站使用相同的名称。火车会自动前往前哨站、加油并在车站等待。
 
   <br />
-  You must have at least one of each of these stations. Set the train limit to 1, or to the number of trains that fit in a stacker before
-  that station.
+  你必须至少拥有以下每种车站各一个。将火车限制设置为 1，或设置为该车站前停车场能容纳的火车数量。
   <ul>
-    <li>Load Station, for mining outposts or parts production.</li>
-    <li>Unload Station, for the main base or final assembly of parts.</li>
-    <li>Fuel Station. Put this near your rocket fuel production.</li>
-    <li>Stacker/Depot Station. Typically a large row of stations for many trains.</li>
+    <li>装载站，用于采矿前哨站或零件生产。</li>
+    <li>卸载站，用于主基地或零件最终组装。</li>
+    <li>燃料站。将其放在火箭燃料生产附近。</li>
+    <li>停车场/车站。通常是用于多列火车的一大排车站。</li>
   </ul>
   <div class="col align-items-center">
     <img

@@ -2,8 +2,8 @@
   <div class="row align-items-center">
     <p class="col-12 col-sm-4 text-center">
       <span class="text-muted">
-        Steam Power
-        <a href="https://wiki.factorio.com/Power_production#Steam_engine_power" target="_blank" rel="noopener">Build Ratio</a> </span
+        蒸汽发电
+        <a href="https://wiki.factorio.com/Power_production#Steam_engine_power" target="_blank" rel="noopener">建造比例</a> </span
       ><br />
       <ng-container *ngFor="let item of POWER_STEAM_DATA.steamBuildRatio.steamRatio">
         <app-factorio-icon [icon]="dataService.getFactorioIcon(item?.iconId, item?.count)"> </app-factorio-icon>
@@ -20,47 +20,31 @@
 
   <ul>
     <li>
-      An
-      <a href="https://wiki.factorio.com/Offshore_pump" target="_blank" rel="noopener">offshore pump</a>
-      provides
-      {{ POWER_STEAM_DATA.offshorePumpWater }}
-      units of water per second.
+      一个<a href="https://wiki.factorio.com/Offshore_pump" target="_blank" rel="noopener">抽水机</a>每秒提供
+      {{ POWER_STEAM_DATA.offshorePumpWater }} 单位的水。
     </li>
     <li>
-      A
-      <a href="https://wiki.factorio.com/Boiler" target="_blank" rel="noopener">steam boiler</a>
-      can convert up to
-      {{ POWER_STEAM_DATA.steamBoilerWater }}
-      units of water into
-      {{ POWER_STEAM_DATA.steamBoilerSteam }}
-      units of steam per second, providing
-      {{ POWER_STEAM_DATA.steamBoilerEnergyMj }}MJ of steam (at 165 °C).
+      一个<a href="https://wiki.factorio.com/Boiler" target="_blank" rel="noopener">锅炉</a>每秒最多可将
+      {{ POWER_STEAM_DATA.steamBoilerWater }} 单位的水转化为 {{ POWER_STEAM_DATA.steamBoilerSteam }} 单位的蒸汽，提供
+      {{ POWER_STEAM_DATA.steamBoilerEnergyMj }}MJ 的蒸汽（165°C）。
+    </li>
+    <li>一个锅炉每秒消耗 {{ POWER_STEAM_DATA.steamBoilerEnergyMj }}MJ 的燃料。</li>
+    <li>
+      一个<a href="https://wiki.factorio.com/Steam_engine" target="_blank" rel="noopener">蒸汽机</a>每秒可将
+      {{ POWER_STEAM_DATA.steamEngineSteam }} 单位的蒸汽（165°C）转化为 {{ POWER_STEAM_DATA.steamEnginePowerMw }}MW 的电力。
     </li>
     <li>
-      A steam boiler consumes
-      {{ POWER_STEAM_DATA.steamBoilerEnergyMj }}MJ of fuel per second.
-    </li>
-    <li>
-      A
-      <a href="https://wiki.factorio.com/Steam_engine" target="_blank" rel="noopener">steam engine</a>
-      can convert
-      {{ POWER_STEAM_DATA.steamEngineSteam }}
-      units of steam (at 165 °C) per second into
-      {{ POWER_STEAM_DATA.steamEnginePowerMw }}MW of electric power.
-    </li>
-    <li>
-      {{ POWER_STEAM_DATA.steamBuildRatio.steamRatio[2].count }}
-      steam engines will provide
-      {{ POWER_STEAM_DATA.steamBuildRatio.steamRatioPowerMw }}MW of power.
+      {{ POWER_STEAM_DATA.steamBuildRatio.steamRatio[2].count }} 个蒸汽机可提供 {{ POWER_STEAM_DATA.steamBuildRatio.steamRatioPowerMw }}MW
+      的电力。
     </li>
   </ul>
 
   <table class="table table-sm table-hover fixed-width">
     <caption class="text-center">
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_Boiler)"> </app-factorio-icon>
-      Boilers supported by a full belt of fuel
+      一条满载燃料的传送带可供应的锅炉数量
       <br />
-      (Rounded up to nearest whole number)
+      （向上取整到最接近的整数）
     </caption>
 
     <thead class="text-center">
@@ -90,10 +74,6 @@
   </table>
 
   <p class="text-center">
-    <kbd
-      >Boilers supported by belt of fuel = Belt Throughput(i/s) * [Fuel Energy(MJ) / Boiler Energy({{
-        POWER_STEAM_DATA.steamBoilerEnergyMj
-      }}MJ)]</kbd
-    >
+    <kbd>燃料传送带可供应的锅炉数 = 传送带吞吐量(物品/秒) * [燃料能量(MJ) / 锅炉能量({{ POWER_STEAM_DATA.steamBoilerEnergyMj }}MJ)]</kbd>
   </p>
 </app-cheat-sheet-template>

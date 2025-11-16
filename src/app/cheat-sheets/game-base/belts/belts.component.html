@@ -3,13 +3,13 @@
     <div class="col-12 col-md-7">
       <table class="table table-sm table-hover fixed-width">
         <caption>
-          Belt throughput and maximum gap between underground belts.
+          传送带吞吐量和地下传送带最大间隔。
         </caption>
         <thead class="text-center">
           <tr>
-            <th>Belt type</th>
-            <th>Throughput</th>
-            <th>Maximum gap</th>
+            <th>传送带类型</th>
+            <th>吞吐量</th>
+            <th>最大间隔</th>
           </tr>
         </thead>
         <tbody class="text-center">
@@ -20,11 +20,11 @@
             </td>
             <td>
               {{ item.throughput | number : '1.0-3' }}
-              items/sec
+              物品/秒
             </td>
             <td>
               {{ item.undergroundSpacing }}
-              tiles
+              格
             </td>
           </tr>
         </tbody>
@@ -39,33 +39,32 @@
         alt="Transport Belt Signal"
         title="Transport Belt Signal"
       />
-      <figcaption>All belts can hold {{ BELT_DATA.beltDensity }} items per tile.</figcaption>
+      <figcaption>所有传送带每格可容纳 {{ BELT_DATA.beltDensity }} 个物品。</figcaption>
     </figure>
   </div>
 
   <br />
 
   <p>
-    Read the
-    <a href="https://wiki.factorio.com/Belt_transport_system" target="_blank" rel="noopener">Factorio wiki, Belt transport system </a>
-    to learn all about belts.
+    阅读
+    <a href="https://wiki.factorio.com/Belt_transport_system" target="_blank" rel="noopener">Factorio Wiki 传送带运输系统</a
+    >了解关于传送带的所有信息。
   </p>
 
-  <h4>Main bus</h4>
+  <h4>主总线</h4>
   <p id="bus">
-    Grouping your belts into a
-    <a href="https://wiki.factorio.com/Tutorial:Main_bus" target="_blank" rel="noopener">Main Bus</a> can help you to expand your factory.
-    To learn more about the main bus, watch any of these YouTube playlists:
+    将传送带组织成<a href="https://wiki.factorio.com/Tutorial:Main_bus" target="_blank" rel="noopener">主总线</a>可以帮助你扩展工厂。
+    要了解更多关于主总线的信息，可以观看这些 YouTube 播放列表：
     <a href="https://www.youtube.com/watch?v=e9LSMqCRsd0&list=PLwehwVVQirAep2XwjX1IoJR4XIqU4eUCH&index=2" target="_blank" rel="noopener"
       >Xterminator</a
-    >,
+    >、
     <a href="https://www.youtube.com/watch?v=-kOxTtgHssk&list=PLnIE0W-m629dSJPPEETVY71CQhOfZ6r7W&index=8" target="_blank" rel="noopener"
       >JDplays</a
     >
-    and
+    和
     <a href="https://www.youtube.com/watch?v=ErdHbEgJG58&list=PLV3rF--heRVu2xlDGZiRbdb7nbwzM9Vyz&index=2" target="_blank" rel="noopener"
       >Nilaus</a
-    >.
+    >。
   </p>
   <div class="row align-items-center">
     <figure class="col-12 align-items-center text-center">
@@ -76,11 +75,11 @@
         alt="Main Bus"
         title="Main Bus"
       />
-      <figcaption>Example of a main bus.</figcaption>
+      <figcaption>主总线示例。</figcaption>
     </figure>
   </div>
 
-  <h3>Advanced belt mechanics</h3>
+  <h3>高级传送带技巧</h3>
 
   <div class="row align-items-center justify-content-around">
     <figure class="col-12 col-sm-6 col-lg-4 col-print-4 text-center">
@@ -91,7 +90,7 @@
         alt="Side Load Underground"
         title="Side Load Underground"
       />
-      <figcaption>Underground belts can be side loaded.</figcaption>
+      <figcaption>地下传送带可以侧向装载。</figcaption>
     </figure>
     <figure class="col-12 col-sm-6 col-lg-4 col-print-4 text-center">
       <img
@@ -101,7 +100,7 @@
         alt="Splitter Filter"
         title="Splitter Filter"
       />
-      <figcaption>Splitters can filter items.</figcaption>
+      <figcaption>分流器可以过滤物品。</figcaption>
     </figure>
 
     <figure class="col-12 col-sm-6 col-lg-4 col-print-4 text-center">
@@ -112,7 +111,7 @@
         alt="Woven Belts"
         title="Woven Belts"
       />
-      <figcaption>Belts can be woven.</figcaption>
+      <figcaption>传送带可以编织。</figcaption>
     </figure>
   </div>
 </app-cheat-sheet-template>

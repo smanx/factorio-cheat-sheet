@@ -1,30 +1,24 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <p>
-    <strong
-      ><a href="https://wiki.factorio.com/Inserters#Inserter_Throughput" target="_blank" rel="noopener">Inserter Throughput</a></strong
-    >
-    - Items per second (i/s) moved by the inserter between targets (chests, belts, assemblers, trains, etc...)
+    <strong><a href="https://wiki.factorio.com/Inserters#Inserter_Throughput" target="_blank" rel="noopener">机械臂吞吐量</a></strong> -
+    机械臂在目标（箱子、传送带、组装机、火车等）之间移动的物品数/秒（i/s）
     <br />
-    <strong
-      ><a href="https://wiki.factorio.com/Inserter_capacity_bonus_(research)" target="_blank" rel="noopener"
-        >Inserter capacity research</a
-      ></strong
-    >
-    is used to increase the throughput.
+    <strong><a href="https://wiki.factorio.com/Inserter_capacity_bonus_(research)" target="_blank" rel="noopener">机械臂容量研究</a></strong
+    >用于提升吞吐量。
   </p>
   <p>
-    The inserter throughput displayed in the tables below can be used to calculate the exact number of inserters needed for your task.
+    下表中显示的机械臂吞吐量可用于计算任务所需的精确机械臂数量。
     <br />
-    <kbd> Inserters Required = (Target Item Rate) / (Inserter Throughput) </kbd>
+    <kbd>所需机械臂数 = (目标物品速率) / (机械臂吞吐量)</kbd>
   </p>
 
   <table class="table table-sm table-hover fixed-width">
     <caption class="text-center">
-      Inserter Throughput
-      <span class="d-inline-block d-sm-none">(i/s)</span>
+      机械臂吞吐量
+      <span class="d-inline-block d-sm-none">(物品/秒)</span>
 
       <div class="input-group d-none-print fixed-width">
-        <span class="input-group-addon">Inserter Bonus Level</span>
+        <span class="input-group-addon">机械臂加成等级</span>
         <select class="form-select" [(ngModel)]="bonusLevel" (ngModelChange)="updateTable()" type="number">
           <option *ngFor="let level of bonusLevels" [ngValue]="level">
             {{ level }}
@@ -35,7 +29,7 @@
     <thead class="text-center">
       <tr>
         <th></th>
-        <th>Stack Size</th>
+        <th>堆叠大小</th>
         <th>
           <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SteelChest)"></app-factorio-icon>
           <i class="fas fa-long-arrow-alt-right text-muted d-none d-md-inline-block" aria-hidden="true"></i>
@@ -93,12 +87,12 @@
   <br />
 
   <ul>
-    <li>Taking items from belts is slightly slower than placing them.</li>
-    <li>It takes 1.625 stack inserters (exclusive swinging time) to fill half a blue belt.</li>
+    <li>从传送带取物品比放置物品略慢。</li>
+    <li>需要 1.625 个堆叠机械臂（不包括摆动时间）才能填满半条蓝色传送带。</li>
     <li>
-      As always check the
+      一如既往地查看
       <a href="https://wiki.factorio.com/Inserters#Inserter_Throughput" target="_blank" rel="noopener">Wiki</a>
-      for more in depth information.
+      以获取更深入的信息。
     </li>
   </ul>
 </app-cheat-sheet>

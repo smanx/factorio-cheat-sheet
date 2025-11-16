@@ -1,54 +1,51 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <div>
-    <p>Use modules to increase the speed, productivity or efficiency of your machines.</p>
+    <p>使用插件可以提升机器的速度、产能或效率。</p>
 
-    <p>
-      If you play with the Space Age expansion, you can use Quality modules to get higher quality output from your mining drills and
-      machines.
-    </p>
+    <p>如果玩太空时代扩展包，可以使用品质插件从采矿机和机器获得更高品质的产出。</p>
 
     <table class="table table-hover fixed-width">
       <caption>
-        <a href="https://wiki.factorio.com/Module" target="_blank" rel="noopener noreferrer">Modules</a>
-        in Factorio.
+        Factorio 中的<a href="https://wiki.factorio.com/Module" target="_blank" rel="noopener noreferrer">插件</a
+        >。
       </caption>
       <thead>
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Icon</th>
-          <th scope="col">Pros</th>
-          <th scope="col">Cons</th>
+          <th scope="col">名称</th>
+          <th scope="col">图标</th>
+          <th scope="col">优点</th>
+          <th scope="col">缺点</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td scope="row">
-            <a href="https://wiki.factorio.com/Speed_module" target="_blank" rel="noopener noreferrer"> Speed </a>
+            <a href="https://wiki.factorio.com/Speed_module" target="_blank" rel="noopener noreferrer"> 速度 </a>
           </td>
           <td><app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SpeedModule3)"></app-factorio-icon></td>
-          <td>Faster crafting.</td>
-          <td>Uses more power.</td>
+          <td>制作更快。</td>
+          <td>消耗更多能量。</td>
         </tr>
         <tr>
           <td scope="row">
-            <a href="https://wiki.factorio.com/Productivity_module" target="_blank" rel="noopener noreferrer"> Productivity </a>
+            <a href="https://wiki.factorio.com/Productivity_module" target="_blank" rel="noopener noreferrer"> 产能 </a>
           </td>
           <td><app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_ProductivityModule3)"></app-factorio-icon></td>
-          <td>Bonus items.</td>
-          <td>Uses more power, slows crafting/mining.</td>
+          <td>额外产出物品。</td>
+          <td>消耗更多能量，减慢制作/采矿速度。</td>
         </tr>
         <tr>
           <td scope="row">
-            <a href="https://wiki.factorio.com/Efficiency_module" target="_blank" rel="noopener noreferrer"> Efficiency </a>
+            <a href="https://wiki.factorio.com/Efficiency_module" target="_blank" rel="noopener noreferrer"> 节能 </a>
           </td>
           <td><app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_EfficiencyModule3)"></app-factorio-icon></td>
-          <td>Use less power, thus create less pollution.</td>
-          <td>None.</td>
+          <td>消耗更少能量，从而产生更少污染。</td>
+          <td>无。</td>
         </tr>
         <tr></tr>
         <tr>
           <td scope="row">
-            <a href="https://wiki.factorio.com/Quality_module" target="_blank" rel="noopener noreferrer"> Quality </a>
+            <a href="https://wiki.factorio.com/Quality_module" target="_blank" rel="noopener noreferrer"> 品质 </a>
           </td>
           <td>
             <app-factorio-icon
@@ -56,8 +53,8 @@
               [spaceAge]="true"
             ></app-factorio-icon>
           </td>
-          <td>Chance to get quality output.</td>
-          <td>Slows crafting/mining.</td>
+          <td>有机会获得品质产出。</td>
+          <td>减慢制作/采矿速度。</td>
         </tr>
       </tbody>
     </table>
@@ -66,81 +63,85 @@
 
     <h4>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_SpeedModule3)"></app-factorio-icon>
-      Tips for Speed modules
+      速度插件使用技巧
     </h4>
 
     <ul>
-      <li>Put Speed modules in Pumpjacks or Mining drills to increase their output.</li>
+      <li>在抽油机或采矿机中放入速度插件可以提高产出。</li>
       <li>
-        Speed modules help you design compact builds, because you need less machines.
+        速度插件可以帮助你设计紧凑型建筑，因为你需要更少的机器。
         <ul>
-          <li>Compact builds reduce the travel distance of your bots, increasing their efficiency and throughput.</li>
+          <li>紧凑型建筑减少了机器人的行驶距离，提高了它们的效率和吞吐量。</li>
         </ul>
       </li>
-      <li>Beacons filled with Speed Modules need a lot of power!</li>
+      <li>装满速度插件的插件效果分享塔需要大量能量！</li>
     </ul>
 
     <h4>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_ProductivityModule3)"></app-factorio-icon>
-      Tips for Productivity modules
+      产能插件使用技巧
     </h4>
 
     <ul>
-      <li>Use Beacons with Speed modules to compensate for the Productivity module's crafting speed penalty.</li>
-      <li>Productivity modules are crucial for big late-game factories, especially when doing infinity research.</li>
+      <li>使用装有速度插件的插件效果分享塔来补偿产能插件的制作速度惩罚。</li>
+      <li>产能插件对于大型后期工厂至关重要，特别是在进行无限科技研究时。</li>
     </ul>
 
     <h4>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_EfficiencyModule3)"></app-factorio-icon>
-      Tips for Efficiency modules
+      节能插件使用技巧
     </h4>
 
     <ul>
-      <li>Save a lot of power by putting tier 1 Efficiency modules in all your mining drills.</li>
-      <li>Put Efficiency modules in your Electric furnaces and Assemblers on your Space platform (Space Age-only).</li>
+      <li>在所有采矿机中放入 1 级节能插件可以节省大量能量。</li>
+      <li>在太空平台的电炉和组装机中放入节能插件（仅太空时代）。</li>
     </ul>
 
     <h4>
       <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_QualityModule3)" [spaceAge]="true"></app-factorio-icon>
-      Tips for Quality modules
+      品质插件使用技巧
     </h4>
 
-    <p>Speed modules <em>lower</em> the quality of the output, so:</p>
+    <p>速度插件会<em>降低</em>输出的品质，因此：</p>
     <ul>
-      <li>Don't put Quality and Speed modules in the same machine.</li>
-      <li>Don't place Beacons with Speed modules near machines with Quality modules.</li>
+      <li>不要在同一台机器中同时放入品质插件和速度插件。</li>
+      <li>不要在装有品质插件的机器附近放置装有速度插件的插件效果分享塔。</li>
     </ul>
 
     <p>
-      Read the
-      <a href="https://wiki.factorio.com/Quality" target="_blank" rel="noopener noreferrer">Factorio Wiki, Quality</a> for more details.
+      阅读
+      <a href="https://wiki.factorio.com/Quality" target="_blank" rel="noopener noreferrer">异星工厂百科，品质</a>以获取更多详情。
     </p>
   </div>
 
-  <h4>Diminishing returns</h4>
+  <h4>收益递减</h4>
 
   <p>
-    Beware of Diminishing Returns <a href="https://factorio.com/blog/post/fff-409" target="_blank" rel="noopener">with beacons</a> and
-    <a href="https://forums.factorio.com/viewtopic.php?f=5&t=5705" target="_blank" rel="noopener">with productivity</a>.
+    注意<a href="https://factorio.com/blog/post/fff-409" target="_blank" rel="noopener">插件效果分享塔</a>和<a
+      href="https://forums.factorio.com/viewtopic.php?f=5&t=5705"
+      target="_blank"
+      rel="noopener"
+      >产能</a
+    >的收益递减。
   </p>
 
   <p>
-    Also see
+    另请参阅
     <a href="https://www.reddit.com/r/factorio/comments/4phc78/math_energy_efficiency_of_productivity3/" target="_blank" rel="noopener"
-      >Beacon Arrangement Power Efficiency</a
-    >.
+      >插件效果分享塔布局的能量效率</a
+    >。
   </p>
 
   <hr />
-  <h4>Calculator</h4>
+  <h4>计算器</h4>
 
-  <p>This calculator shows how many machines you need to get your wanted output.</p>
+  <p>此计算器显示要达到所需产出需要多少台机器。</p>
 
   <div class="row align-items-center">
     <div class="col-12 col-lg-3">
       <div class="eq-container">
         <div class="eq-field bg-neutral">
-          <span class="eq-label">Machines Needed</span>
+          <span class="eq-label">所需机器数</span>
           <input class="eq-input" [value]="calcMachines.machinesToFillBelt" type="text" readonly />
         </div>
         <div class="eq-operator">=</div>
@@ -149,7 +150,7 @@
     <div class="col-12 col-lg-9">
       <div class="eq-container">
         <div class="eq-field bg-factorio-yellow-muted">
-          <span class="eq-label">Item Production Rate</span>
+          <span class="eq-label">物品生产速率</span>
           <input
             class="eq-input"
             [(ngModel)]="calcMachines.itemProductionRate"
@@ -161,7 +162,7 @@
         </div>
         <div class="eq-operator">*</div>
         <div class="eq-field bg-factorio-green">
-          <span class="eq-label">Recipe Base Craft Time</span>
+          <span class="eq-label">配方基础制作时间</span>
           <input
             class="eq-input"
             [(ngModel)]="calcMachines.recipeBaseCraftTime"
@@ -175,7 +176,7 @@
       <div class="eq-operator op-divide"></div>
       <div class="eq-container">
         <div class="eq-field bg-factorio-gray">
-          <span class="eq-label">Items per Craft</span>
+          <span class="eq-label">每次制作产出数</span>
           <input
             class="eq-input"
             [(ngModel)]="calcMachines.itemsPerCraft"
@@ -187,7 +188,7 @@
         </div>
         <div class="eq-operator">*</div>
         <div class="eq-field bg-factorio-blue">
-          <span class="eq-label">Machine Craft Speed</span>
+          <span class="eq-label">机器制作速度</span>
           <input
             class="eq-input"
             [(ngModel)]="calcMachines.machineCraftSpeed"
@@ -200,7 +201,7 @@
         <div class="eq-operator">*</div>
         <div class="eq-field bg-factorio-red">
           <span class="eq-label">1 + </span>
-          <span class="eq-label">(Machine Productivity Bonus %</span>
+          <span class="eq-label">(机器产能加成 %</span>
           <input
             class="eq-input"
             [(ngModel)]="calcMachines.machineProductivityBonusPercent"
@@ -220,8 +221,8 @@
       class="img-fluid rounded"
       loading="lazy"
       src="{{ APP_INFO.links.getLocalImagePath('formula-diagram.webp') }}"
-      alt="Formula Diagram"
-      title="Formula Diagram"
+      alt="公式图示"
+      title="公式图示"
     />
   </div>
 </app-cheat-sheet>

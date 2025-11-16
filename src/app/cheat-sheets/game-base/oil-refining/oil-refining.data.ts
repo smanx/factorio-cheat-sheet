@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const OIL_REFINING_SHEET_NAV: NavData = newNavData(
-  'Oil Refining',
+  '原油精炼',
   FactorioIcons.Icons_OilRefinery
 );
 

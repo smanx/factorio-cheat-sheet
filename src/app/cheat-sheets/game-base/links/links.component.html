@@ -1,7 +1,7 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <div class="row">
     <div class="col-12 col-lg-6">
-      <h4 class="card-title" id="MainLinks">Main</h4>
+      <h4 class="card-title" id="MainLinks">主要链接</h4>
       <ng-container
         *ngTemplateOutlet="
           NestedLinks;
@@ -14,7 +14,7 @@
     </div>
 
     <div class="col-12 col-lg-6">
-      <h4 class="card-title print-page-break" id="CommunityLinks">Community Creations</h4>
+      <h4 class="card-title print-page-break" id="CommunityLinks">社区作品</h4>
       <ng-container
         *ngTemplateOutlet="
           NestedLinks;
@@ -29,7 +29,7 @@
 
   <hr />
 
-  <h4 class="card-title" id="CreatorLinks">Creator Blueprints</h4>
+  <h4 class="card-title" id="CreatorLinks">创作者蓝图</h4>
   <ul class="row">
     <li class="col-12 col-md-6 col-lg-4 col-xl-3 col" *ngFor="let link of sheetData?.creatorBlueprints">
       <a *ngIf="link.url" href="{{ link?.url }}" target="_blank" rel="noopener">{{ link?.text }}</a>

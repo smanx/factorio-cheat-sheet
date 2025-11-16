@@ -7,7 +7,7 @@ import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 import { Links, MOD_REQUESTS } from './contribute.data';
 
 export const CONTRIBUTE_SHEET_NAV: NavData = newNavData(
-  'Contribute',
+  '贡献',
   FactorioIcons.Core_RenameIcon
 );
 

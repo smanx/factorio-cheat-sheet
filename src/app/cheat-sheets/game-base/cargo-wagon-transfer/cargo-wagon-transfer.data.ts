@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const CARGO_WAGON_TRANSFER_SHEET_NAV: NavData = newNavData(
-  'Cargo Wagon Transfer',
+  '货运车厢转运',
   FactorioIcons.Icons_CargoWagon
 );
 

@@ -9,7 +9,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const TRAINS_SHEET_NAV: NavData = newNavData(
-  'Trains',
+  '火车',
   FactorioIcons.Icons_Locomotive
 );
 

@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const MATERIAL_PROCESSING_SHEET_NAV: NavData = newNavData(
-  'Material Processing',
+  '材料加工',
   FactorioIcons.ItemGroup_IntermediateProducts
 );
 

@@ -3,7 +3,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const MINING_SHEET_NAV: NavData = newNavData(
-  'Mining',
+  '采矿',
   FactorioIcons.Icons_ElectricMiningDrill
 );
 

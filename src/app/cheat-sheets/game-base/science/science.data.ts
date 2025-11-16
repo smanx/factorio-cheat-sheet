@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const SCIENCE_SHEET_NAV: NavData = newNavData(
-  'Science',
+  '科技',
   FactorioIcons.Icons_Lab
 );
 

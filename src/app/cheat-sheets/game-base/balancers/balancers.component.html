@@ -1,25 +1,23 @@
 <app-cheat-sheet [cheatSheet]="cheatSheet">
   <p>
-    Use <a href="https://wiki.factorio.com/Balancer_mechanics">balancers</a>
-    to distribute items over multiple belts, like at ore patches or on the
-    <a href="https://wiki.factorio.com/Tutorial:Main_bus#Split-off">main bus</a>.
+    使用<a href="https://wiki.factorio.com/Balancer_mechanics">平衡器</a>在多条传送带之间分配物品，例如在矿区或<a
+      href="https://wiki.factorio.com/Tutorial:Main_bus#Split-off"
+      >主总线</a
+    >上。
   </p>
-  <p>Balancers can have these properties:</p>
+  <p>平衡器可以具有以下特性：</p>
   <ul>
-    <li>Input balanced, take evenly from input belts.</li>
-    <li>Output balanced, distribute evenly to output belts.</li>
-    <li>Output balanced under back pressure, keeps even distribution, even if any output belt is blocked.</li>
-    <li>
-      <a href="https://wiki.factorio.com/Balancer_mechanics#Throughput" target="_blank" rel="noopener">Throughput limited</a>, may have
-      bottlenecks.
-    </li>
+    <li>输入平衡：从输入传送带均匀取物。</li>
+    <li>输出平衡：向输出传送带均匀分配。</li>
+    <li>背压下输出平衡：即使任何输出传送带被阻塞，也保持均匀分配。</li>
+    <li><a href="https://wiki.factorio.com/Balancer_mechanics#Throughput" target="_blank" rel="noopener">吞吐量限制</a>：可能存在瓶颈。</li>
   </ul>
 
   <hr />
   <div class="row">
     <div class="col-12 col-md-7 align-items-center text-center">
       <p>
-        <strong>4x4 belt balancer</strong>
+        <strong>4x4 传送带平衡器</strong>
         <br />
         <img
           class="img-fluid rounded"
@@ -32,37 +30,33 @@
     </div>
 
     <div class="col-12 col-md-5">
-      <strong class="d-block text-center">Tips</strong>
+      <strong class="d-block text-center">技巧</strong>
       <ul>
-        <li>Only use balancers when needed.</li>
-        <li>If your assembling machines consume a full belt you don't need a balancer.</li>
-        <li>Try making balanced builds, for example:</li>
+        <li>仅在需要时使用平衡器。</li>
+        <li>如果你的组装机消耗满一条传送带，则不需要平衡器。</li>
+        <li>尝试建造平衡的设施，例如：</li>
         <ul>
-          <li>A small build: 3 copper cable to 2 electronic circuits.</li>
-          <li>A medium build: 2 belts of iron plate to 1 belt of iron gear wheels.</li>
-          <li>
-            A large build: part of the base uses exactly 4 belts of iron plates. This helps you to scale the base to the available input.
-          </li>
-          <li>A train build: uses 1 train of iron plates and 1 train of copper plates.</li>
+          <li>小型设施：3 个铜线对应 2 个电路板。</li>
+          <li>中型设施：2 条铁板传送带对应 1 条铁齿轮传送带。</li>
+          <li>大型设施：基地的某部分恰好使用 4 条铁板传送带。这有助于根据可用输入扩展基地规模。</li>
+          <li>火车设施：使用 1 列铁板火车和 1 列铜板火车。</li>
         </ul>
         <li>
-          These throughput unlimited balancers cover most cases:
+          这些无吞吐量限制的平衡器涵盖了大多数情况：
           <app-blueprint-clipboard [url]="sheetData?.commonBalancers?.[0]?.raw"></app-blueprint-clipboard>
           <a href="{{sheetData?.commonBalancers?.[0]?.url}}" target="_blank" rel="noopener"
             >4<i class="fas fa-long-arrow-alt-right"></i>4</a
           >
-          and
+          和
           <app-blueprint-clipboard [url]="sheetData?.commonBalancers?.[1]?.raw"></app-blueprint-clipboard>
           <a href="{{sheetData?.commonBalancers?.[1]?.url}}" target="_blank" rel="noopener">8<i class="fas fa-long-arrow-alt-right"></i>8</a
-          >.
+          >。
         </li>
         <li>
-          You can find more balancers online, like the
+          你可以在线找到更多平衡器，例如
           <a href="https://github.com/raynquist/balancer/blob/master/blueprints/balancer_book.txt" target="_blank" rel="noopener"
-            >Balancer Book</a
-          >
-          by
-          <a href="https://www.reddit.com/u/raynquist/" target="_blank" rel="noopener">Raynquist</a>.
+            >平衡器蓝图书</a
+          >，由 <a href="https://www.reddit.com/u/raynquist/" target="_blank" rel="noopener">Raynquist</a> 制作。
         </li>
       </ul>
     </div>
@@ -72,18 +66,18 @@
 
   <div class="row text-center">
     <div class="col-12 col-lg-6 col-print-6">
-      <a href="https://imgur.com/gallery/Qtv6xHD" target="_blank" rel="noopener">Old wiki balancer page</a>
-      screenshot.
+      <a href="https://imgur.com/gallery/Qtv6xHD" target="_blank" rel="noopener">旧 Wiki 平衡器页面</a>
+      截图。
       <br />
-      <a href="https://gist.github.com/Bilka2/aeec4ff7123ff5544cb9a80cf1046a06" target="_blank" rel="noopener">Balancer Collection</a>
-      from Bilka.
+      <a href="https://gist.github.com/Bilka2/aeec4ff7123ff5544cb9a80cf1046a06" target="_blank" rel="noopener">平衡器集合</a>
+      来自 Bilka。
       <br />
     </div>
     <div class="col-12 col-lg-6 col-print-6">
-      <a href="https://github.com/tzwaan/factorio_balancers" target="_blank" rel="noopener"> Balancer tool </a>
-      by tzwaan.
+      <a href="https://github.com/tzwaan/factorio_balancers" target="_blank" rel="noopener"> 平衡器工具 </a>
+      由 tzwaan 制作。
       <br />
-      Balancer Guides by
+      平衡器指南，由
       <a
         href="https://www.reddit.com/r/factorio/comments/9x3m14/i_couldnt_find_a_general_guide_to_balancers_so_i/"
         target="_blank"
@@ -91,8 +85,8 @@
       >
         CptTrifonius
       </a>
-      and
-      <a href="https://forums.factorio.com/viewtopic.php?t=61424" target="_blank" rel="noopener"> EX_plode </a>.
+      和
+      <a href="https://forums.factorio.com/viewtopic.php?t=61424" target="_blank" rel="noopener"> EX_plode </a> 制作。
     </div>
   </div>
 </app-cheat-sheet>

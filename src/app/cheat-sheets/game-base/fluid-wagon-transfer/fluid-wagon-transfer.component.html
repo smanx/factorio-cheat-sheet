@@ -3,26 +3,22 @@
     <div class="col-12 col-lg-8">
       <ul>
         <li>
-          <a href="https://wiki.factorio.com/Fluid_wagon" target="_blank" rel="noopener">Fluid wagons</a>
-          require at least one pump and at most 3 pumps per fluid wagon.
+          <a href="https://wiki.factorio.com/Fluid_wagon" target="_blank" rel="noopener">液罐车厢</a>每个至少需要 1 个泵，最多 3 个泵。
         </li>
+        <li>如果液罐车厢上可以激活超过 3 个泵，只有 3 个会"锁定"并使用，其余泵保持不活动。</li>
         <li>
-          If more than 3 pumps can be active on the fluid wagon, only 3 will “latch on” and be in use with the remaining pumps inactive.
-        </li>
-        <li>
-          <a href="https://wiki.factorio.com/Pump#Throughput" target="_blank" rel="noopener">Pumps</a>
-          and Storage Tanks have a maximum throughput of
+          <a href="https://wiki.factorio.com/Pump#Throughput" target="_blank" rel="noopener">泵</a>和储液罐的最大吞吐量为
           {{ sheetData?.pumpRate | number }}
-          fluid/s.
+          流体/秒。
         </li>
-        <li>Pipelines are limited to a {{ sheetData?.pipelineLimit }}x{{ sheetData?.pipelineLimit }} area before needing a pump</li>
-        <li class="line-through">Using underground pipes counts as less entities then if straight pipe for same distance.</li>
+        <li>管道在需要泵之前限制在 {{ sheetData?.pipelineLimit }}x{{ sheetData?.pipelineLimit }} 的区域内</li>
+        <li class="line-through">使用地下管道比使用相同距离的直管道计为更少的实体。</li>
         <li>
-          Fluid wagons can hold
+          液罐车厢可以容纳
           {{ sheetData?.fluidWagonSize | number }}
-          units of fluids which is equal to
+          单位的流体，相当于
           {{ sheetData ? sheetData.fluidWagonSize / sheetData.storageTankSize : '???' }}
-          <a href="https://wiki.factorio.com/Storage_tank" target="_blank" rel="noopener">Storage Tanks</a>.
+          个<a href="https://wiki.factorio.com/Storage_tank" target="_blank" rel="noopener">储液罐</a>。
 
           <div class="row">
             <div class="col-6 text-center">
@@ -50,14 +46,14 @@
     <div class="col-12 col-lg-4 text-center">
       <table class="table table-sm table-hover fixed-width" style="max-width: 300px">
         <caption class="text-center">
-          Direct connection (no pipes)
+          直接连接（无管道）
         </caption>
         <thead class="text-center">
           <tr>
             <th>
               <app-factorio-icon [icon]="dataService.getFactorioIcon(FactorioIcons.Icons_Pump)"></app-factorio-icon>
             </th>
-            <th>Loading &amp; Unloading Times for {{ sheetData?.fluidWagonSize | number }} fluid</th>
+            <th>{{ sheetData?.fluidWagonSize | number }} 流体的装载和卸载时间</th>
           </tr>
         </thead>
         <tbody class="text-center">
@@ -78,7 +74,7 @@
   <div class="row align-items-center justify-content-around">
     <div class="col text-center col-print-3">
       <span
-        ><strong>Tanker-Pump Alignment <a [routerLink]="[]" fragment="note-alignment">*</a></strong></span
+        ><strong>液罐车-泵对齐方式 <a [routerLink]="[]" fragment="note-alignment">*</a></strong></span
       ><br />
       <video
         class="img-fluid rounded"
@@ -89,7 +85,7 @@
         alt="Tanker-Pump Alignment"
         title="Tanker-Pump Alignment"
       ></video>
-      <p id="note-alignment">*Trains snap into position when placed at train stations.</p>
+      <p id="note-alignment">*火车在火车站放置时会自动对齐到位置。</p>
     </div>
   </div>
 

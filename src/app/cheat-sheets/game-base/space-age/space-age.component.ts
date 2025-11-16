@@ -13,7 +13,7 @@ import { SPACE_AGE_DATA } from './space-age.data';
 import { SpaceAgeData } from './space-age.model';
 
 export const SPACE_AGE_SHEET_NAV: NavData = newNavData(
-  'Space Age',
+  '太空时代',
   FactorioIcons.Icons_SpaceAge
 );
 

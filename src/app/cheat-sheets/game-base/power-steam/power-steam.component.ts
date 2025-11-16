@@ -11,7 +11,7 @@ import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 import { POWER_STEAM_DATA, PowerSteamData } from './power-steam.data';
 
 export const POWER_STEAM_SHEET_NAV: NavData = newNavData(
-  'Steam Power',
+  '蒸汽动力',
   FactorioIcons.Icons_SteamEngine
 );
 

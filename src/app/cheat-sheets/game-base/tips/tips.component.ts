@@ -10,7 +10,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const TIPS_PAYOFFS_SHEET_NAV: NavData = newNavData(
-  'Tips',
+  '提示',
   FactorioIcons.Technology_SteelAxe
 );
 

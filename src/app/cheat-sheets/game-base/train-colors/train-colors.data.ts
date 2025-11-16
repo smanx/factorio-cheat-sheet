@@ -4,7 +4,7 @@ import { FactorioIcons } from 'app/shared/factorio-icons.enum';
 import { NavData, newNavData } from 'app/shared/nav-data/nav-data.model';
 
 export const TRAIN_COLOR_SHEET_NAV: NavData = newNavData(
-  'Train Colors',
+  '火车颜色',
   FactorioIcons.Icons_TrainStop
 );
 
@@ -48,17 +48,17 @@ export const TRAIN_COLOR_DATA: RawData<TrainColorsData> = {
       {
         icon: FactorioIcons.Icons_SteelPlate,
         rgb: [255, 200, 180],
-        type: 'Steel',
+        type: '钢材',
       },
       {
         icon: FactorioIcons.Icons_IronGearWheel,
         rgb: [150, 150, 150],
-        type: 'Gears',
+        type: '齿轮',
       },
       {
         icon: FactorioIcons.Icons_Uranium238,
         rgb: [40, 100, 50],
-        type: 'Uranium',
+        type: '铀',
       },
       {
         icon: FactorioIcons.Icons_ElectronicCircuit,
@@ -75,7 +75,7 @@ export const TRAIN_COLOR_DATA: RawData<TrainColorsData> = {
       {
         icon: FactorioIcons.Fluid_CrudeOil,
         rgb: [0, 0, 30],
-        type: 'Oil',
+        type: '原油',
       },
       {
         icon: FactorioIcons.Fluid_Lubricant,
@@ -84,12 +84,12 @@ export const TRAIN_COLOR_DATA: RawData<TrainColorsData> = {
       {
         icon: FactorioIcons.Fluid_SulfuricAcid,
         rgb: [255, 255, 0],
-        type: 'Acid',
+        type: '硫酸',
       },
       {
         icon: FactorioIcons.Icons_PlasticBar,
         rgb: [255, 255, 255],
-        type: 'Plastic',
+        type: '塑料',
       },
       {
         icon: FactorioIcons.Icons_Explosives,
@@ -98,57 +98,57 @@ export const TRAIN_COLOR_DATA: RawData<TrainColorsData> = {
       {
         icon: FactorioIcons.Icons_AutomationSciencePack,
         rgb: [255, 50, 50],
-        type: 'Red Science',
+        type: '红瓶',
       },
       {
         icon: FactorioIcons.Icons_LogisticSciencePack,
         rgb: [100, 255, 100],
-        type: 'Green Science',
+        type: '绿瓶',
       },
       {
         icon: FactorioIcons.Icons_ChemicalSciencePack,
         rgb: [80, 180, 255],
-        type: 'Blue Science',
+        type: '蓝瓶',
       },
       {
         icon: FactorioIcons.Icons_MilitarySciencePack,
         rgb: [50, 50, 50],
-        type: 'Grey Science',
+        type: '灰瓶',
       },
       {
         icon: FactorioIcons.Icons_ProductionSciencePack,
         rgb: [255, 80, 255],
-        type: 'Purple Science',
+        type: '紫瓶',
       },
       {
         icon: FactorioIcons.Icons_UtilitySciencePack,
         rgb: [255, 180, 80],
-        type: 'Yellow Science',
+        type: '黄瓶',
       },
       {
         icon: FactorioIcons.Icons_SpaceSciencePack,
         rgb: [200, 200, 200],
-        type: 'Space Science',
+        type: '太空科技包',
       },
       {
         icon: FactorioIcons.Icons_SolarPanel,
         rgb: [0, 100, 150],
-        type: 'Solar',
+        type: '太阳能',
       },
       {
         icon: FactorioIcons.Icons_RocketPart,
         rgb: [255, 0, 100],
-        type: 'Rocket Supply',
+        type: '火箭补给',
       },
       {
         icon: FactorioIcons.Icons_PowerArmor,
         rgb: [255, 0, 255],
-        type: 'PAX Shuttle',
+        type: '客运班车',
       },
       {
         icon: FactorioIcons.Icons_RepairPack,
         rgb: [0, 255, 255],
-        type: 'Supply/Trash/etc.',
+        type: '补给/垃圾/其他',
       },
     ],
     trainColorsGenerated: [

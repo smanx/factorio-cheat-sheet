@@ -1,17 +1,16 @@
 <div class="container">
-  <h2>Overview</h2>
+  <h2>概览</h2>
   <hr />
   <p class="lead">
     <span>
-      A summary of common
-      <a href="https://www.factorio.com/" target="_blank" rel="noopener">Factorio</a> facts, based on Factorio version
-      {{ APP_INFO.data_version }}.
+      基于 Factorio {{ APP_INFO.data_version }} 版本的常用信息速查表，内容来自
+      <a href="https://www.factorio.com/" target="_blank" rel="noopener">Factorio</a>。
     </span>
     <br />
     <small class="text-muted">
-      Please report any errors or suggestions on
-      <a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener"> GitHub</a> or
-      <a href="https://discord.gg/PkyzXzz" target="_blank" rel="noopener">Discord</a>.
+      如有任何错误或建议，请在
+      <a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener"> GitHub</a> 或
+      <a href="https://discord.gg/PkyzXzz" target="_blank" rel="noopener">Discord</a> 上反馈。
     </small>
   </p>
 
@@ -19,63 +18,58 @@
     <div class="col-12">
       <ul>
         <li>
-          New Players should check the
-          <a [routerLink]="[]" fragment="links">Links</a>
-          and
-          <a [routerLink]="[]" fragment="tips">Tips</a>
-          Sections.
+          新手玩家建议查看
+          <a [routerLink]="[]" fragment="links">链接</a>
+          和
+          <a [routerLink]="[]" fragment="tips">技巧</a>
+          部分。
         </li>
         <li>
-          The
           <a href="https://wiki.factorio.com/" target="_blank" rel="noopener">Factorio Wiki</a>
-          has the latest data. If the cheat sheet shows different data than the Wiki, please
-          <a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener"> open a issue on GitHub</a>.
+          拥有最新的数据。如果速查表显示的数据与 Wiki 不同，请
+          <a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener">在 GitHub 上提交问题</a>。
         </li>
-        <li>Any of the sections can be collapsed/expanded by toggling the top right corner (-/+).</li>
+        <li>任何章节都可以通过点击右上角的 (-/+) 来折叠/展开。</li>
         <li>
-          Space Age only content is marked with this icon:
-          <img [src]="spaceAgeIconInfo.url" [alt]="spaceAgeIconInfo.display" style="width: 16px; height: 16px" />.
+          太空时代 DLC 独有内容标有此图标：
+          <img [src]="spaceAgeIconInfo.url" [alt]="spaceAgeIconInfo.display" style="width: 16px; height: 16px" />。
         </li>
+        <li><a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener">已知问题列表</a>。</li>
         <li>
-          <a href="https://github.com/deniszholob/factorio-cheat-sheet/issues" target="_blank" rel="noopener"> List of known Issues</a>.
-        </li>
-        <li>
-          Also check out the
-          <a href="https://deniszholob.github.io/satisfactory-cheat-sheet/" target="_blank" rel="noopener"> Satisfactory Cheat Sheet</a>,
-          and the
-          <a href="https://deniszholob.github.io/dyson-sphere-program-cheat-sheet/" target="_blank" rel="noopener">
-            Dyson Sphere Program Cheat Sheet</a
-          >.
+          还可以查看
+          <a href="https://deniszholob.github.io/satisfactory-cheat-sheet/" target="_blank" rel="noopener">幸福工厂速查表</a>
+          和
+          <a href="https://deniszholob.github.io/dyson-sphere-program-cheat-sheet/" target="_blank" rel="noopener"> 戴森球计划速查表</a>。
         </li>
       </ul>
 
-      The ratios on this site assume:
+      本站的比例假设：
       <ul>
-        <li>Plain assemblers. No modules in the assemblers or in beacons affecting your assemblers.</li>
-        <li>The assemblers are crafting continuously.</li>
+        <li>使用普通组装机，没有插件影响组装机或插件效果分享塔。</li>
+        <li>组装机持续生产。</li>
       </ul>
-      The ratios are a baseline. For precise ratios, please use a <a [routerLink]="[]" fragment="CommunityLinks">calculator</a>.
+      这些比例是基准值。如需精确比例，请使用<a [routerLink]="[]" fragment="CommunityLinks">计算器</a>。
       <hr />
 
       <div class="text-center">
         <a class="lead" href="https://github.com/deniszholob/factorio-cheat-sheet/releases" target="_blank" rel="noopener noreferrer">
-          Old Cheat Sheets and PDF downloads
+          旧版速查表和 PDF 下载
         </a>
 
-        <p class="text-muted">If you find the cheat sheet useful, you can:</p>
+        <p class="text-muted">如果你觉得这个速查表有用，可以：</p>
         <div class="support-buttons">
           <a class="btn btn-outline-primary" href="https://ko-fi.com/deniszholob" target="_blank" rel="noopener">
-            Buy me <br />
+            请我喝咖啡 <br />
             <i class="{{ APP_INFO.kofi.icon }}"></i>
             Ko-fi
           </a>
           <a class="btn btn-outline-primary" href="https://patreon.com/deniszholob" target="_blank" rel="noopener">
-            Support me on <br />
+            赞助我 <br />
             <i class="{{ APP_INFO.patreon.icon }}"></i>
             Patreon
           </a>
           <a class="btn btn-outline-primary" [href]="APP_INFO.factoryTime.url" target="_blank" rel="noopener noreferrer">
-            Play My Game <br />
+            玩我的游戏 <br />
             <i class="{{ APP_INFO.factoryTime.icon }}"></i>
             "Factory Time"
           </a>
@@ -86,30 +80,28 @@
 
   <hr />
 
-  <p>A huge thank you to:</p>
+  <p>特别感谢：</p>
 
   <ul>
     <li>
-      <a href="https://github.com/deniszholob/factorio-cheat-sheet/graphs/contributors" target="_blank" rel="noopener"
-        >all the contributors on GitHub</a
-      >,
+      <a href="https://github.com/deniszholob/factorio-cheat-sheet/graphs/contributors" target="_blank" rel="noopener">所有 GitHub 贡献者</a
+      >，
     </li>
-    <li>
-      <a href="https://github.com/deniszholob/factorio-cheat-sheet/releases">the community that helped create the older cheat sheets</a>,
-    </li>
-    <li><a href="https://wiki.factorio.com/" target="_blank" rel="noopener">the Factorio Wiki</a>,</li>
-    <li><a href="https://www.reddit.com/r/factorio" target="_blank" rel="noopener">the Factorio subreddit</a>,</li>
-    <li><a href="https://discordapp.com/invite/factorio" target="_blank" rel="noopener">our Factorio Discord</a>.</li>
+    <li><a href="https://github.com/deniszholob/factorio-cheat-sheet/releases">帮助创建旧版速查表的社区</a>，</li>
+    <li><a href="https://wiki.factorio.com/" target="_blank" rel="noopener">Factorio Wiki</a>，</li>
+    <li><a href="https://www.reddit.com/r/factorio" target="_blank" rel="noopener">Factorio subreddit</a>，</li>
+    <li><a href="https://discordapp.com/invite/factorio" target="_blank" rel="noopener">Factorio Discord</a>。</li>
   </ul>
 
-  This cheat sheet summarizes the important info about Factorio. For more details, please use the sources listed above.
+  本速查表总结了 Factorio 的重要信息。更多详情，请使用上述来源。
   <hr />
 
   <p>
-    All icons are credited to the Factorio team but made available on
-    <a href="https://github.com/deniszholob/icons-factorio" target="_blank" rel="noopener">github.com/deniszholob/icons-factorio</a>. <br />
-    An icon viewer can be found at
-    <a href="https://deniszholob.github.io/icons-viewer/" target="_blank" rel="noopener">deniszholob.github.io/icons-viewer</a>.
+    所有图标版权归 Factorio 团队所有，但可在
+    <a href="https://github.com/deniszholob/icons-factorio" target="_blank" rel="noopener">github.com/deniszholob/icons-factorio</a>
+    获取。<br />
+    图标查看器位于
+    <a href="https://deniszholob.github.io/icons-viewer/" target="_blank" rel="noopener">deniszholob.github.io/icons-viewer</a>。
   </p>
   <hr />
 </div>
